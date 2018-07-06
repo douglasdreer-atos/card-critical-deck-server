@@ -25,16 +25,7 @@ public class TipoService {
     }
 
     public Boolean excluir(Long id){
-        Boolean status = false;
-
-        TipoEntity tipo = new TipoEntity();
-        tipo = buscarPorId(id);
-        tipo.setStatus(false);
-        tipo = repository.save(tipo);
-
-        return tipo.getStatus();
+        repository.deleteById(id);
+        return !repository.existsById(id);
     }
-
-
-    
 }
