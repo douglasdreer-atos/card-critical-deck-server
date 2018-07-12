@@ -16,28 +16,32 @@ public class TipoController {
     @Autowired
     private TipoService service;
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost")
     @GetMapping(value = "")
     @ResponseBody
     public ResponseEntity<List<TipoEntity>> listar(){
         return new ResponseEntity<>((List) service.listar(), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost")
     @GetMapping(value = "/{id}")
     @ResponseBody
     public ResponseEntity<TipoEntity> buscarPorId(@PathVariable Long id){
         return new ResponseEntity<>(service.buscarPorId(id), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<TipoEntity> salvar(@RequestBody TipoEntity tipo){
         return new ResponseEntity<>(service.salvar(tipo), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost")
     @DeleteMapping(value = "/excluir/{id}")
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
