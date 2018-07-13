@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("item")
+@RequestMapping("itens")
 public class ItemController {
     @Autowired
     private ItemService service;
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
     @ResponseBody
     public ResponseEntity<List<ItemEntity>> listar(){
@@ -24,7 +24,7 @@ public class ItemController {
     }
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}")
     @ResponseBody
     public ResponseEntity<ItemEntity> buscarPorId(@PathVariable Long id){
@@ -32,7 +32,7 @@ public class ItemController {
     }
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity tipo){
@@ -40,7 +40,7 @@ public class ItemController {
     }
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
-    @CrossOrigin(origins = "http://localhost")
+    @CrossOrigin(origins = "http://localhost:8080")
     @DeleteMapping(value = "/excluir/{id}")
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){

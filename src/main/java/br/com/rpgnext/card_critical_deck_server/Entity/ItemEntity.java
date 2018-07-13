@@ -18,13 +18,16 @@ public class ItemEntity {
     
     private String descricao;
 
+    private Boolean status;
+
     public ItemEntity() {
     }
 
-    public ItemEntity(String titulo, TipoEntity tipo, String descricao) {
+    public ItemEntity(String titulo, TipoEntity tipo, String descricao, Boolean status) {
         this.titulo = titulo;
         this.tipo = tipo;
         this.descricao = descricao;
+        this.status = status;
     }
 
     public Long getId() {
@@ -57,5 +60,13 @@ public class ItemEntity {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 }

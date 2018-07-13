@@ -5,15 +5,17 @@ public class ItemModel {
     private String titulo;
     private TipoModel tipo;
     private String descricao;
+    private Boolean status;
 
     public ItemModel() {
     }
 
-    public ItemModel(Long id, String titulo, TipoModel tipo, String descricao) {
+    public ItemModel(Long id, String titulo, TipoModel tipo, String descricao, Boolean status) {
         this.id = id;
         this.titulo = titulo;
         this.tipo = tipo;
         this.descricao = descricao;
+        this.status = status;
     }
 
     public Long getId() {
