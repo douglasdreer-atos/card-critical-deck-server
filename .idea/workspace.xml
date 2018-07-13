@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b784afa-a4ba-4333-b51f-7a05f6fd7e8c" name="Default" comment="Ajuste para funcionar o Heroku">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/storage_v2/_src_/database/critical_hit_deck.dULh1Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/storage_v2/_src_/database/critical_hit_deck.dULh1Q/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,23 +70,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TipoController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TipoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="404">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -118,9 +108,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>@CrossOrigin(origins = &quot;http://localhost:8082&quot;)</find>
+      <find>localhost</find>
     </findStrings>
     <replaceStrings>
       <replace>@CrossOrigin(origins = &quot;https://deck-critical-hit-client.herokuapp.com&quot;)</replace>
+      <replace>localhost:8080</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -182,7 +174,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1366" />
     <option name="height" value="683" />
@@ -372,7 +364,7 @@
       <workItem from="1530705174058" duration="1115000" />
       <workItem from="1530878704431" duration="3200000" />
       <workItem from="1531136816612" duration="3790000" />
-      <workItem from="1531414387489" duration="4070000" />
+      <workItem from="1531414387489" duration="5578000" />
     </task>
     <task id="LOCAL-00001" summary="Ajuste para funcionar o Heroku">
       <created>1531415076944</created>
@@ -399,10 +391,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12175000" />
+    <option name="totallyTimeSpent" value="13683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1366" height="683" extended-state="0" />
+    <frame x="-2" y="22" width="1366" height="683" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
@@ -423,7 +415,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="10" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32593855" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32593855" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2613293" />
@@ -623,20 +615,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="404">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
