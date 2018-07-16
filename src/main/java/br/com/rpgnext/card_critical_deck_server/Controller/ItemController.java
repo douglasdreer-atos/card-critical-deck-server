@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("item")
+@RequestMapping("itens")
+
 public class ItemController {
     @Autowired
     private ItemService service;
