@@ -24,6 +24,10 @@ public class TipoService {
         return repository.save(tipo);
     }
 
+    public TipoEntity editar(TipoEntity tipo){
+        return repository.save(tipo);
+    }
+
     public Boolean excluir(Long id){
         repository.deleteById(id);
         return !repository.existsById(id);

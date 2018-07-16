@@ -32,4 +32,13 @@ public class ItemService {
         item.setTipo(tipo);
         return repository.save(item);
     }
+
+    public ItemEntity editar(ItemEntity item){
+        return repository.save(item);
+    }
+
+    public Boolean excluir(Long id){
+        repository.deleteById(id);
+        return repository.existsById(id);
+    }
 }
