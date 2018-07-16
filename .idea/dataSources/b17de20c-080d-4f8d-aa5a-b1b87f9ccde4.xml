@@ -86,8 +86,8 @@
     <schema id="18" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-07-06.11:31:14.625</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1128</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-07-16.09:35:01.677</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1195</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -134,53 +134,118 @@
       <Type>index</Type>
     </access-method>
     <sequence id="25" parent="18" name="hibernate_sequence">
-      <ObjectId>57712</ObjectId>
-      <StateNumber>1126</StateNumber>
+      <ObjectId>57820</ObjectId>
+      <StateNumber>1190</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <table id="26" parent="18" name="tipos">
-      <ObjectId>57714</ObjectId>
-      <StateNumber>1127</StateNumber>
+    <table id="26" parent="18" name="items">
+      <ObjectId>57803</ObjectId>
+      <StateNumber>1195</StateNumber>
     </table>
-    <column id="27" parent="26" name="id">
+    <table id="27" parent="18" name="tipos">
+      <ObjectId>57811</ObjectId>
+      <StateNumber>1191</StateNumber>
+    </table>
+    <column id="28" parent="26" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1184</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="28" parent="26" name="nome">
+    <column id="29" parent="26" name="descricao">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1184</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="29" parent="26" name="status">
+    <column id="30" parent="26" name="titulo">
       <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1184</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="31" parent="26" name="tipo_id">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1184</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="32" parent="26" name="status">
+      <Position>5</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1195</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="30" parent="26" name="tipos_pkey">
-      <ObjectId>57717</ObjectId>
+    <index id="33" parent="26" name="items_pkey">
+      <ObjectId>57809</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="31" parent="26" name="uk_gd17sslehrnsww1r53wvc8r5g">
-      <ObjectId>57719</ObjectId>
+    <index id="34" parent="26" name="uk_f2gouk41qrxjlvgqna17exj0n">
+      <ObjectId>57816</ObjectId>
+      <ColNames>titulo</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="26" name="items_pkey">
+      <ObjectId>57810</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>items_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="36" parent="26" name="uk_f2gouk41qrxjlvgqna17exj0n">
+      <ObjectId>57817</ObjectId>
+      <ColNames>titulo</ColNames>
+      <UnderlyingIndexName>uk_f2gouk41qrxjlvgqna17exj0n</UnderlyingIndexName>
+    </key>
+    <foreign-key id="37" parent="26" name="fkfg8r0rtkug2wl66monjxoo1ar">
+      <ObjectId>57822</ObjectId>
+      <ColNames>tipo_id</ColNames>
+      <RefTableId>57811</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>tipos</RefTableName>
+      <RefKeyName>tipos_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="38" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1185</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="39" parent="27" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1185</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="40" parent="27" name="status">
+      <Position>3</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>1185</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="41" parent="27" name="tipos_pkey">
+      <ObjectId>57814</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="42" parent="27" name="uk_gd17sslehrnsww1r53wvc8r5g">
+      <ObjectId>57818</ObjectId>
       <ColNames>nome</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="32" parent="26" name="tipos_pkey">
-      <ObjectId>57718</ObjectId>
+    <key id="43" parent="27" name="tipos_pkey">
+      <ObjectId>57815</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tipos_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="33" parent="26" name="uk_gd17sslehrnsww1r53wvc8r5g">
-      <ObjectId>57720</ObjectId>
+    <key id="44" parent="27" name="uk_gd17sslehrnsww1r53wvc8r5g">
+      <ObjectId>57819</ObjectId>
       <ColNames>nome</ColNames>
       <UnderlyingIndexName>uk_gd17sslehrnsww1r53wvc8r5g</UnderlyingIndexName>
     </key>
