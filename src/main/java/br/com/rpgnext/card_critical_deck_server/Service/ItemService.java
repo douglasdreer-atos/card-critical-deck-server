@@ -1,7 +1,9 @@
 package br.com.rpgnext.card_critical_deck_server.Service;
 
 import br.com.rpgnext.card_critical_deck_server.Entity.ItemEntity;
+import br.com.rpgnext.card_critical_deck_server.Entity.TipoEntity;
 import br.com.rpgnext.card_critical_deck_server.Repository.ItemRepository;
+import br.com.rpgnext.card_critical_deck_server.Repository.TipoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +14,12 @@ public class ItemService {
     @Autowired
     private ItemRepository repository;
 
+    @Autowired
+    private TipoRepository tipoRepository;
+
     public List<ItemEntity> listar(){
-        return (List) repository.findAll();
+        List<ItemEntity> lista = (List) repository.findAll();
+        return lista;
     }
 
     public ItemEntity buscarPorId(Long id){
@@ -22,6 +28,8 @@ public class ItemService {
     }
 
     public ItemEntity salvar(ItemEntity item){
+        TipoEntity tipo = tipoRepository.findById(item.getTipo().getId()).get();
+        item.setTipo(tipo);
         return repository.save(item);
     }
 }

@@ -1,10 +1,14 @@
 package br.com.rpgnext.card_critical_deck_server.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "items")
-public class ItemEntity {
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+public class ItemEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
@@ -19,6 +23,11 @@ public class ItemEntity {
     private String descricao;
 
     private Boolean status;
+
+    @PrePersist
+    void prePersist(){
+        this.status = true;
+    }
 
     public ItemEntity() {
     }
