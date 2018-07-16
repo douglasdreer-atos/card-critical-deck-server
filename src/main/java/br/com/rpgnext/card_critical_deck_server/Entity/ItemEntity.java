@@ -10,7 +10,7 @@ import java.io.Serializable;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class ItemEntity implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true, nullable = true)
