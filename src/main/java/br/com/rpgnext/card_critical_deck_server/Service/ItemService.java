@@ -7,6 +7,8 @@ import br.com.rpgnext.card_critical_deck_server.Repository.TipoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -19,6 +21,7 @@ public class ItemService {
 
     public List<ItemEntity> listar(){
         List<ItemEntity> lista = (List) repository.findAll();
+        Collections.sort(lista, Comparator.comparing(ItemEntity::getId).thenComparing(ItemEntity::getId));
         return lista;
     }
 
