@@ -24,6 +24,10 @@ public class TipoService {
         return repository.save(tipo);
     }
 
+    public List<TipoEntity> salvarTodos(List<TipoEntity> tipos) {
+        return (List) repository.saveAll(tipos);
+    }
+
     public TipoEntity editar(TipoEntity tipo){
         return repository.save(tipo);
     }
@@ -32,4 +36,6 @@ public class TipoService {
         repository.deleteById(id);
         return !repository.existsById(id);
     }
+
+
 }

@@ -1,7 +1,6 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
 import br.com.rpgnext.card_critical_deck_server.Entity.ItemEntity;
-import br.com.rpgnext.card_critical_deck_server.Entity.TipoEntity;
 import br.com.rpgnext.card_critical_deck_server.Service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -35,25 +34,41 @@ public class ItemController {
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/{id}/tipo")
+    @ResponseBody
+    public ResponseEntity<List<ItemEntity>> buscarPorTipo(@PathVariable Long id) {
+        return new ResponseEntity<>(service.buscarPorTipo(id), HttpStatus.OK);
+    }
+
+
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
-    public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity tipo){
-        return new ResponseEntity<>(service.salvar(tipo), HttpStatus.OK);
+    public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity item) {
+        return new ResponseEntity<>(service.salvar(item), HttpStatus.OK);
     }
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
-    @PutMapping(value = "/editar/{id}")
+    @PostMapping(value = "/salvar/todos")
+    @ResponseBody
+    public ResponseEntity<List<ItemEntity>> salvar(@RequestBody List<ItemEntity> itens) {
+        return new ResponseEntity<>(service.salvarTodos(itens), HttpStatus.OK);
+    }
+
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PutMapping(value = "{id}/editar")
     @ResponseBody
     public ResponseEntity<Boolean> editar(@PathVariable Long id, @RequestBody ItemEntity item){
         ItemEntity itemSalvo = service.editar(item);
-        Boolean status = item.equals(itemSalvo);
-        return new ResponseEntity<>(status, HttpStatus.OK);
+        return new ResponseEntity<>(true, HttpStatus.OK);
     }
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
-    @DeleteMapping(value = "/excluir/{id}")
+    @DeleteMapping(value = "{id}/excluir")
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
