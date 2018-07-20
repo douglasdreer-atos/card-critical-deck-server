@@ -33,6 +33,22 @@ public class CardController {
 
     //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/{id}/item")
+    @ResponseBody
+    public ResponseEntity<List<CardEntity>> buscarPorItem(@PathVariable Long id) {
+        return new ResponseEntity<>(service.buscarPorItem(id), HttpStatus.OK);
+    }
+
+    //@CrossOrigin(origns = "https:deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/sortear")
+    @ResponseBody
+    public ResponseEntity<CardEntity> sortearCard(){
+        return new ResponseEntity<>(service.sortearPersonalizado(), HttpStatus.OK);
+    }
+
+    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<CardEntity> salvar(@RequestBody CardEntity card) {

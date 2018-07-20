@@ -1,14 +1,19 @@
 package br.com.rpgnext.card_critical_deck_server.Service;
 
+import br.com.rpgnext.card_critical_deck_server.Controller.TipoController;
 import br.com.rpgnext.card_critical_deck_server.Entity.CardEntity;
 import br.com.rpgnext.card_critical_deck_server.Entity.ItemEntity;
+import br.com.rpgnext.card_critical_deck_server.Entity.TipoEntity;
 import br.com.rpgnext.card_critical_deck_server.Repository.CardRepository;
 import br.com.rpgnext.card_critical_deck_server.Repository.ItemRepository;
+import br.com.rpgnext.card_critical_deck_server.Repository.TipoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.smartcardio.Card;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class CardService {
@@ -17,6 +22,9 @@ public class CardService {
 
     @Autowired
     private ItemRepository itemRepository;
+
+    @Autowired
+    private TipoRepository tipoRepository;
 
     public CardEntity salvar(CardEntity card) {
         List<ItemEntity> itens = new ArrayList<>();
@@ -47,6 +55,33 @@ public class CardService {
         card.getItens().forEach(item -> {
             itens.add(itemRepository.findById(item.getId()).get());
         });
+        card.setItens(itens);
+        return card;
+    }
+
+    public List<CardEntity> buscarPorItem(Long itemId){
+        List<CardEntity> cards = (List) repository.findAll();
+        cards.stream().forEach(card -> {
+
+            ItemEntity itemEntity = card.getItens().stream().filter(item -> {
+                return itemId.equals(item.getId());
+            }).findFirst().get();
+        });
+        return cards;
+    }
+
+    public CardEntity sortearPersonalizado() {
+        Random random = new Random();
+        CardEntity card = new CardEntity();
+        Long id = 1L;
+        List<ItemEntity> itens = new ArrayList<>();
+
+        tipoRepository.findAll().forEach(tipo -> {
+            List<ItemEntity> itensPorTipo = itemRepository.findByTipo(tipo);
+            Integer index = random.nextInt(itensPorTipo.size());
+            itens.add(itensPorTipo.get(index));
+        });
+
         card.setItens(itens);
         return card;
     }
