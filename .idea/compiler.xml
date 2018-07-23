@@ -9,8 +9,5 @@
         <module name="card_critical_deck_server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="card_critical_deck_server" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
