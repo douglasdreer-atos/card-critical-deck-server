@@ -30,19 +30,42 @@ public class ItemController {
         return new ResponseEntity<>(service.buscarPorId(id), HttpStatus.OK);
     }
 
+
+    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @GetMapping(value = "/{id}/tipo")
+    @ResponseBody
+    public ResponseEntity<List<ItemEntity>> buscarPorTipo(@PathVariable Long id) {
+        return new ResponseEntity<>(service.buscarPorTipo(id), HttpStatus.OK);
+    }
+
+
     @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @PostMapping(value = "/salvar")
     @ResponseBody
-    public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity tipo){
-        return new ResponseEntity<>(service.salvar(tipo), HttpStatus.OK);
+    public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity item) {
+        return new ResponseEntity<>(service.salvar(item), HttpStatus.OK);
     }
 
     @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
-    @DeleteMapping(value = "/excluir/{id}")
+    @PostMapping(value = "/salvar/todos")
+    @ResponseBody
+    public ResponseEntity<List<ItemEntity>> salvar(@RequestBody List<ItemEntity> itens) {
+        return new ResponseEntity<>(service.salvarTodos(itens), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @PutMapping(value = "{id}/editar")
+    @ResponseBody
+    public ResponseEntity<Boolean> editar(@PathVariable Long id, @RequestBody ItemEntity item){
+        ItemEntity itemSalvo = service.editar(item);
+        return new ResponseEntity<>(true, HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @DeleteMapping(value = "{id}/excluir")
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
-        return null;
-        //return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
+        return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
     }
 
 
