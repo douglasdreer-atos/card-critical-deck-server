@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b784afa-a4ba-4333-b51f-7a05f6fd7e8c" name="Default" comment="Ajuste para funcionar o Heroku">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/storage_v2/_src_/database/critical_hit_deck.dULh1Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/storage_v2/_src_/database/critical_hit_deck.dULh1Q/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,8 +75,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="342">
+              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -129,6 +132,8 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Entity/ItemEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Entity/TipoEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/ItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Model/CardModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/BackupController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
@@ -172,9 +177,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
     <option name="y" value="22" />
     <option name="width" value="1366" />
-    <option name="height" value="681" />
+    <option name="height" value="685" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -184,6 +190,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,15 +216,29 @@
               <item name="card-critical-deck-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="card-critical-deck-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="card-critical-deck-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="card_critical_deck_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="card-critical-deck-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="card-critical-deck-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="card_critical_deck_server" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,6 +337,11 @@
       <workItem from="1531746056999" duration="149000" />
       <workItem from="1531746330316" duration="5720000" />
       <workItem from="1532521187157" duration="228000" />
+      <workItem from="1532955888782" duration="540000" />
+      <workItem from="1532957532577" duration="2657000" />
+      <workItem from="1532976962125" duration="157000" />
+      <workItem from="1532978797023" duration="269000" />
+      <workItem from="1533554823773" duration="7101000" />
     </task>
     <task id="LOCAL-00001" summary="Ajuste para funcionar o Heroku">
       <created>1531415076944</created>
@@ -347,76 +375,55 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21544000" />
+    <option name="totallyTimeSpent" value="32376000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1366" height="681" extended-state="0" />
+    <frame x="-3" y="22" width="1366" height="685" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5007553" side_tool="true" weight="0.32482994" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32930514" />
       <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
       <window_info id="Capture Tool" order="14" />
       <window_info id="Designer" order="16" />
-      <window_info anchor="right" id="Database" order="9" weight="0.32930514" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32854986" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="15" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3989726" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="24" />
+      <window_info anchor="bottom" id="Messages" order="24" weight="0.32993197" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="18" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="22" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.059931505" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49924472" visible="true" weight="0.32482994" />
       <window_info anchor="bottom" id="Spring" order="21" />
       <window_info anchor="bottom" id="Terminal" order="19" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.27265862" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.27643505" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32930514" />
       <window_info id="Web" order="12" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32534248" />
-      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27265862" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info id="Favorites" order="11" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="19" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32930514" />
-      <window_info id="Web" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="13" />
-      <window_info anchor="right" id="Database" order="9" weight="0.32930514" />
-      <window_info id="Capture Tool" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="22" />
-      <window_info id="npm" order="8" sideWeight="0.502551" side_tool="true" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="23" weight="0.32876712" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info id="UI Designer" order="15" />
+      <window_info id="npm" order="8" sideWeight="0.502551" side_tool="true" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.3989726" />
-      <window_info anchor="bottom" id="Messages" order="24" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="16" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="8" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32534248" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924472" visible="true" weight="0.32482994" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="7" />
@@ -424,28 +431,26 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007553" side_tool="true" weight="0.32482994" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info id="npm" order="2" sideWeight="0.502551" side_tool="true" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32930514" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2688822" />
-      <window_info anchor="right" id="Database" order="9" weight="0.32930514" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27643505" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32854986" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989726" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32930514" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,45 +485,11 @@
       <option name="time" value="7" />
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Entity/ItemEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/TipoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Service/TipoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -666,13 +637,6 @@
       </provider>
     </entry>
     <entry file="das://b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/database/critical_hit_deck/schema/public/table/tipos" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Entity/CardEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Entity/TypeEntity.java" />
     <entry file="file://$PROJECT_DIR$/.gitattributes">
@@ -727,7 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/database/critical_hit_deck/schema/public/table/items" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Model/ItemModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -762,7 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/database/critical_hit_deck/schema/public/table/tipos" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Entity/TipoEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -784,10 +746,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Model/CardModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/database/critical_hit_deck/schema/public/table/items">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Service/CardService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/database/critical_hit_deck/schema/public/table/cards">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b17de20c-080d-4f8d-aa5a-b1b87f9ccde4/database/critical_hit_deck/schema/public/table/tipos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/BackupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/rpgnext/card_critical_deck_server/Controller/CardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="342">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
