@@ -1,0 +1,7614 @@
+[
+  {
+    "id": "base1-1",
+    "name": "Alakazam",
+    "imageUrl": "https://images.pokemontcg.io/base1/1.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Kadabra",
+    "ability": { "id" : 1 },
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": 1,
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      { "id" : 1 }
+    ],
+    "weaknesses": [ { "id" : 9 } ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/1_hires.png",
+    "nationalPokedexNumber": 65
+  },
+  {
+    "id": "base1-2",
+    "name": "Blastoise",
+    "imageUrl": "https://images.pokemontcg.io/base1/2.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "52",
+    "evolvesFrom": 8,
+    "ability": { "id" : 2},
+    "hp": "100",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": 2,
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [ { "id": 2 } ],
+    "weaknesses": [ { "id": 8 } ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/2_hires.png",
+    "nationalPokedexNumber": 9
+  },
+  {
+    "id": "base1-3",
+    "name": "Chansey",
+    "imageUrl": "https://images.pokemontcg.io/base1/3.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "55",
+    "hp": "120",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "3",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      { "id": 4 },
+      { "id": 5 }        
+    ],
+    "weaknesses": [
+      { "id" : 5 }
+    ],
+    "resistances": [ { "id": 1} ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/3_hires.png",
+    "nationalPokedexNumber": 113,
+    "evolvesTo": 0
+    ]
+  },
+  {
+    "id": "base1-4",
+    "name": "Charizard",
+    "imageUrl": "https://images.pokemontcg.io/base1/4.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "76",
+    "evolvesFrom": "Charmeleon",
+    "ability": { "id" : 3 },
+    "hp": "120",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "4",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Fire Spin",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 6 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "100",
+        "text": "Discard 2 Energy cards attached to Charizard in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/4_hires.png",
+    "nationalPokedexNumber": 6
+  },
+  {
+    "id": "base1-5",
+    "name": "Clefairy",
+    "imageUrl": "https://images.pokemontcg.io/base1/5.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "14",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "5",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Sing",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Metronome",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Choose 1 of Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding energy cards. (No matter what type the defender is, Clefairy's type is still Colorless.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/5_hires.png",
+    "nationalPokedexNumber": 35,
+    "evolvesTo": [
+      "Clefable"
+    ]
+  },
+  {
+    "id": "base1-6",
+    "name": "Gyarados",
+    "imageUrl": "https://images.pokemontcg.io/base1/6.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "41",
+    "evolvesFrom": "Magikarp",
+    "hp": "100",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "6",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Dragon Rage",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": ""
+      },
+      {
+        "name": "Bubblebeam",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "40",
+        "text": "Flip a coin. If heads, Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/6_hires.png",
+    "nationalPokedexNumber": 130
+  },
+  {
+    "id": "base1-7",
+    "name": "Hitmonchan",
+    "imageUrl": "https://images.pokemontcg.io/base1/7.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "33",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "7",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Jab",
+        "cost": [
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Special Punch",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/7_hires.png",
+    "nationalPokedexNumber": 107
+  },
+  {
+    "id": "base1-8",
+    "name": "Machamp",
+    "imageUrl": "https://images.pokemontcg.io/base1/8.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "67",
+    "evolvesFrom": "Machoke",
+    "ability": { "id" : 4 },
+    "hp": "100",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "8",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Seismic Toss",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/8_hires.png",
+    "nationalPokedexNumber": 68
+  },
+  {
+    "id": "base1-9",
+    "name": "Magneton",
+    "imageUrl": "https://images.pokemontcg.io/base1/9.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Magnemite",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "9",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Thunder Wave",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Selfdestruct",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "80",
+        "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 80 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/9_hires.png",
+    "nationalPokedexNumber": 82,
+    "evolvesTo": [
+      "Magnezone"
+    ]
+  },
+  {
+    "id": "base1-10",
+    "name": "Mewtwo",
+    "imageUrl": "https://images.pokemontcg.io/base1/10.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "53",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "10",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": { "id" : 10 },
+        "cost": [
+          { "id" : 10 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each Energy card attached to the Defending Pokémon."
+      },
+      {
+        "name": "Barrier",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Discard 1 Energy card attached to Mewtwo in order to use this attack. During your opponent's next turn, prevent all effects of attacks, including damage, done to Mewtwo."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/10_hires.png",
+    "nationalPokedexNumber": 150
+  },
+  {
+    "id": "base1-11",
+    "name": "Nidoking",
+    "imageUrl": "https://images.pokemontcg.io/base1/11.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "23",
+    "evolvesFrom": "Nidorino",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "11",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Thrash",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Nidoking does 10 damage to itself."
+      },
+      {
+        "name": "Toxic",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": "The Defending Pokémon is now Poisoned. It now takes 20 Poison damage instead of 10 after each player's turn (even if it was already Poisoned)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/11_hires.png",
+    "nationalPokedexNumber": 34
+  },
+  {
+    "id": "base1-12",
+    "name": "Ninetales",
+    "imageUrl": "https://images.pokemontcg.io/base1/12.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "32",
+    "evolvesFrom": "Vulpix",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "12",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Lure",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with the Defending Pokémon."
+      },
+      {
+        "name": "Fire Blast",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 6 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "80",
+        "text": "Discard 1 Energy card attached to Ninetales in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/12_hires.png",
+    "nationalPokedexNumber": 38
+  },
+  {
+    "id": "base1-13",
+    "name": "Poliwrath",
+    "imageUrl": "https://images.pokemontcg.io/base1/13.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "48",
+    "evolvesFrom": "Poliwhirl",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "13",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Water Gun",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "Does 30 damage plus 10 more damage for each Energy attached to Poliwrath but not used to pay for this attack's Energy cost. Extra Energy after the 2nd doesn't count."
+      },
+      {
+        "name": "Whirlpool",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "40",
+        "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 and discard it."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/13_hires.png",
+    "nationalPokedexNumber": 62
+  },
+  {
+    "id": "base1-14",
+    "name": "Raichu",
+    "imageUrl": "https://images.pokemontcg.io/base1/14.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "40",
+    "evolvesFrom": "Pikachu",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "14",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Agility",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20",
+        "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Raichu."
+      },
+      {
+        "name": "Thunder",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": "Flip a coin. If tails, Raichu does 30 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/14_hires.png",
+    "nationalPokedexNumber": 26
+  },
+  {
+    "id": "base1-15",
+    "name": "Venusaur",
+    "imageUrl": "https://images.pokemontcg.io/base1/15.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "67",
+    "evolvesFrom": "Ivysaur",
+    "ability": { "id" : 5 },
+    "hp": "100",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "15",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Solarbeam",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/15_hires.png",
+    "nationalPokedexNumber": 3
+  },
+  {
+    "id": "base1-16",
+    "name": "Zapdos",
+    "imageUrl": "https://images.pokemontcg.io/base1/16.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "64",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "16",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Thunder",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": "Flip a coin. If tails, Zapdos does 30 damage to itself."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "100",
+        "text": "Discard all Energy cards attached to Zapdos in order to use this attack."
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/16_hires.png",
+    "nationalPokedexNumber": 145
+  },
+  {
+    "id": "base1-17",
+    "name": "Beedrill",
+    "imageUrl": "https://images.pokemontcg.io/base1/17.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "32",
+    "evolvesFrom": "Kakuna",
+    "hp": "80",
+    "convertedRetreatCost": 0,
+    "number": "17",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Twineedle",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30×",
+        "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+      },
+      {
+        "name": "Poison Sting",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/17_hires.png",
+    "nationalPokedexNumber": 15
+  },
+  {
+    "id": "base1-18",
+    "name": "Dragonair",
+    "imageUrl": "https://images.pokemontcg.io/base1/18.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "33",
+    "evolvesFrom": "Dratini",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "18",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Slam",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Flip 2 coins. This attack does 30 times number of heads."
+      },
+      {
+        "name": "Hyper Beam",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "20",
+        "text": "If the Defending Pokémon has energy cards attached to it, choose 1 of them and discard it."
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/18_hires.png",
+    "nationalPokedexNumber": 148,
+    "evolvesTo": [
+      "Dragonite"
+    ]
+  },
+  {
+    "id": "base1-19",
+    "name": "Dugtrio",
+    "imageUrl": "https://images.pokemontcg.io/base1/19.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "36",
+    "evolvesFrom": "Diglett",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "19",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Slash",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": ""
+      },
+      {
+        "name": "Earthquake",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "70",
+        "text": "Does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/19_hires.png",
+    "nationalPokedexNumber": 51
+  },
+  {
+    "id": "base1-20",
+    "name": "Electabuzz",
+    "imageUrl": "https://images.pokemontcg.io/base1/20.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "35",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "20",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Thundershock",
+        "cost": [
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Thunderpunch",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30+",
+        "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Electabuzz does 10 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/20_hires.png",
+    "nationalPokedexNumber": 125,
+    "evolvesTo": [
+      "Electivire"
+    ]
+  },
+  {
+    "id": "base1-21",
+    "name": "Electrode",
+    "imageUrl": "https://images.pokemontcg.io/base1/21.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "40",
+    "evolvesFrom": "Voltorb",
+    "ability": { "id" : 6 },
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "21",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Electric Shock",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": "Flip a coin. If tails, Electrode does 10 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/21_hires.png",
+    "nationalPokedexNumber": 101
+  },
+  {
+    "id": "base1-22",
+    "name": "Pidgeotto",
+    "imageUrl": "https://images.pokemontcg.io/base1/22.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "36",
+    "evolvesFrom": "Pidgey",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "22",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Whirlwind",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+      },
+      {
+        "name": "Mirror Move",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "If Pidgeotto was attacked last turn, do the final result of that attack on Pidgeotto to the Defending Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/22_hires.png",
+    "nationalPokedexNumber": 17,
+    "evolvesTo": [
+      "Pidgeot"
+    ]
+  },
+  {
+    "id": "base1-23",
+    "name": "Arcanine",
+    "imageUrl": "https://images.pokemontcg.io/base1/23.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "45",
+    "evolvesFrom": "Growlithe",
+    "hp": "100",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "23",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Flamethrower",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": "Discard 1 Energy card attached to Arcanine in order to use this attack."
+      },
+      {
+        "name": "Take Down",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "80",
+        "text": "Arcanine does 30 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/23_hires.png",
+    "nationalPokedexNumber": 59
+  },
+  {
+    "id": "base1-24",
+    "name": "Charmeleon",
+    "imageUrl": "https://images.pokemontcg.io/base1/24.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "32",
+    "evolvesFrom": "Charmander",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "24",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Slash",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Flamethrower",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": "Discard 1 Energy card attached to Charmeleon in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/24_hires.png",
+    "nationalPokedexNumber": 5,
+    "evolvesTo": [
+      "Charizard"
+    ]
+  },
+  {
+    "id": "base1-25",
+    "name": "Dewgong",
+    "imageUrl": "https://images.pokemontcg.io/base1/25.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Seel",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "25",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Aurora Beam",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": ""
+      },
+      {
+        "name": "Ice Beam",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "30",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/25_hires.png",
+    "nationalPokedexNumber": 87
+  },
+  {
+    "id": "base1-26",
+    "name": "Dratini",
+    "imageUrl": "https://images.pokemontcg.io/base1/26.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "26",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Pound",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/26_hires.png",
+    "nationalPokedexNumber": 147,
+    "evolvesTo": [
+      "Dragonair"
+    ]
+  },
+  {
+    "id": "base1-27",
+    "name": "Farfetch'd",
+    "imageUrl": "https://images.pokemontcg.io/base1/27.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "20",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "27",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Leek Slap",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If tails, this attack does nothing. Either way, use this attack again as long as Farfetch'd stays in play (even putting Farfech'd on the Bench won't let you use it again.)"
+      },
+      {
+        "name": "Pot Smash",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/27_hires.png",
+    "nationalPokedexNumber": 83
+  },
+  {
+    "id": "base1-28",
+    "name": "Growlithe",
+    "imageUrl": "https://images.pokemontcg.io/base1/28.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "18",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "28",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Flare",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/28_hires.png",
+    "nationalPokedexNumber": 58,
+    "evolvesTo": [
+      "Arcanine"
+    ]
+  },
+  {
+    "id": "base1-29",
+    "name": "Haunter",
+    "imageUrl": "https://images.pokemontcg.io/base1/29.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "22",
+    "evolvesFrom": "Gastly",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "29",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Hypnosis",
+        "cost": [
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Dream Eater",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "You can't this attack unless the Defending Pokémon is Asleep."
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/29_hires.png",
+    "nationalPokedexNumber": 93,
+    "evolvesTo": [
+      "Gengar"
+    ]
+  },
+  {
+    "id": "base1-30",
+    "name": "Ivysaur",
+    "imageUrl": "https://images.pokemontcg.io/base1/30.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "20",
+    "evolvesFrom": "Barboach",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "30",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Vine Whip",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Poisonpowder",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "The Defending Pokémon is now Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/30_hires.png",
+    "nationalPokedexNumber": 2,
+    "evolvesTo": [
+      "Venusaur"
+    ]
+  },
+  {
+    "id": "base1-31",
+    "name": "Jynx",
+    "imageUrl": "https://images.pokemontcg.io/base1/31.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "23",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "31",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Doubleslap",
+        "cost": [
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10×",
+        "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+      },
+      {
+        "name": "Meditate",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 10 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20+",
+        "text": "Does 20 damage plus 10 more damage for each damage counter on the Defending Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/31_hires.png",
+    "nationalPokedexNumber": 124
+  },
+  {
+    "id": "base1-32",
+    "name": "Kadabra",
+    "imageUrl": "https://images.pokemontcg.io/base1/32.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "38",
+    "evolvesFrom": "Abra",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "32",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Recover",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Discard 1 Energy card attached to Kadabra in order use this attack. Remove all damage counters from Kadabra."
+      },
+      {
+        "name": "Super Psy",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 10 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/32_hires.png",
+    "nationalPokedexNumber": 64,
+    "evolvesTo": [
+      "Alakazam"
+    ]
+  },
+  {
+    "id": "base1-33",
+    "name": "Kakuna",
+    "imageUrl": "https://images.pokemontcg.io/base1/33.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "23",
+    "evolvesFrom": "Weedle",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "33",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Stiffen",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, prevent all damage done to Kakuna during your opponent's next turn. (Any other effects of attacks still happen.)"
+      },
+      {
+        "name": "Poisonpowder",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/33_hires.png",
+    "nationalPokedexNumber": 14,
+    "evolvesTo": [
+      "Beedrill"
+    ]
+  },
+  {
+    "id": "base1-34",
+    "name": "Machoke",
+    "imageUrl": "https://images.pokemontcg.io/base1/34.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "40",
+    "evolvesFrom": "Machop",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "34",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Karate Chop",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Does 50 damage minus 10 for each damage counter on Machoke."
+      },
+      {
+        "name": "Submission",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": "Machoke does 20 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/34_hires.png",
+    "nationalPokedexNumber": 67,
+    "evolvesTo": [
+      "Machamp"
+    ]
+  },
+  {
+    "id": "base1-35",
+    "name": "Magikarp",
+    "imageUrl": "https://images.pokemontcg.io/base1/35.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "30",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "35",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Flail",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10×",
+        "text": "Does 10 damage times number of damage counters on Magikarp."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/35_hires.png",
+    "nationalPokedexNumber": 129,
+    "evolvesTo": [
+      "Gyarados"
+    ]
+  },
+  {
+    "id": "base1-36",
+    "name": "Magmar",
+    "imageUrl": "https://images.pokemontcg.io/base1/36.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "24",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "36",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Fire Punch",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Flamethrower",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": "Discard 1 Energy card attached to Magmar in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/36_hires.png",
+    "nationalPokedexNumber": 126,
+    "evolvesTo": [
+      "Magmortar"
+    ]
+  },
+  {
+    "id": "base1-37",
+    "name": "Nidorino",
+    "imageUrl": "https://images.pokemontcg.io/base1/37.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "25",
+    "evolvesFrom": "Nidoran♂",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "37",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Double Kick",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30×",
+        "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+      },
+      {
+        "name": "Horn Drill",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/37_hires.png",
+    "nationalPokedexNumber": 33,
+    "evolvesTo": [
+      "Nidoking"
+    ]
+  },
+  {
+    "id": "base1-38",
+    "name": "Poliwhirl",
+    "imageUrl": "https://images.pokemontcg.io/base1/38.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Poliwag",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "38",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Amnesia",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Choose 1 of defenders attacks. Defender cannot use that attack next turn."
+      },
+      {
+        "name": "Doubleslap",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30×",
+        "text": "Flip 2 coins. This attack does 30 damage times number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/38_hires.png",
+    "nationalPokedexNumber": 61,
+    "evolvesTo": [
+      "Poliwrath",
+      "Politoed"
+    ]
+  },
+  {
+    "id": "base1-39",
+    "name": "Porygon",
+    "imageUrl": "https://images.pokemontcg.io/base1/39.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "30",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "39",
+    "artist": "Tomoaki Imakuni",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Conversion 1",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If the Defending Pokémon has a Weakness, you may change it to a type of your choice other than Colorless."
+      },
+      {
+        "name": "Conversion 2",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Change Porygon's Resistance to a type of your choice other than Colorless."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/39_hires.png",
+    "nationalPokedexNumber": 137,
+    "evolvesTo": [
+      "Porygon2"
+    ]
+  },
+  {
+    "id": "base1-40",
+    "name": "Raticate",
+    "imageUrl": "https://images.pokemontcg.io/base1/40.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "41",
+    "evolvesFrom": "Poochyena",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "40",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Super Fang",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Does damage to the Defending Pokémon equal to half the Defending Pokémon's remaining HP (rounded up to the nearest 10)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/40_hires.png",
+    "nationalPokedexNumber": 20
+  },
+  {
+    "id": "base1-41",
+    "name": "Seel",
+    "imageUrl": "https://images.pokemontcg.io/base1/41.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "41",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Headbutt",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/41_hires.png",
+    "nationalPokedexNumber": 86,
+    "evolvesTo": [
+      "Dewgong"
+    ]
+  },
+  {
+    "id": "base1-42",
+    "name": "Wartortle",
+    "imageUrl": "https://images.pokemontcg.io/base1/42.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "22",
+    "evolvesFrom": "Squirtle",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "42",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Withdraw",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, prevent all damage done to Wartortle during your opponent's next turn. (Any other effects of attacks still happen.)"
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/42_hires.png",
+    "nationalPokedexNumber": 8,
+    "evolvesTo": [
+      "Blastoise"
+    ]
+  },
+  {
+    "id": "base1-43",
+    "name": "Abra",
+    "imageUrl": "https://images.pokemontcg.io/base1/43.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "30",
+    "convertedRetreatCost": 0,
+    "number": "43",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Psyshock",
+        "cost": [
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/43_hires.png",
+    "nationalPokedexNumber": 63,
+    "evolvesTo": [
+      "Kadabra"
+    ]
+  },
+  {
+    "id": "base1-44",
+    "name": "Bulbasaur",
+    "imageUrl": "https://images.pokemontcg.io/base1/44.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "44",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Leech Seed",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Bulbasaur."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/44_hires.png",
+    "nationalPokedexNumber": 1,
+    "evolvesTo": [
+      "Ivysaur"
+    ]
+  },
+  {
+    "id": "base1-45",
+    "name": "Caterpie",
+    "imageUrl": "https://images.pokemontcg.io/base1/45.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "45",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "String Shot",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/45_hires.png",
+    "nationalPokedexNumber": 10,
+    "evolvesTo": [
+      "Metapod"
+    ]
+  },
+  {
+    "id": "base1-46",
+    "name": "Charmander",
+    "imageUrl": "https://images.pokemontcg.io/base1/46.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "46",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Scratch",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Ember",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": "Discard 1 Energy card attached to Charmander in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/46_hires.png",
+    "nationalPokedexNumber": 4,
+    "evolvesTo": [
+      "Charmeleon"
+    ]
+  },
+  {
+    "id": "base1-47",
+    "name": "Diglett",
+    "imageUrl": "https://images.pokemontcg.io/base1/47.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "30",
+    "convertedRetreatCost": 0,
+    "number": "47",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Dig",
+        "cost": [
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Mud Slap",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/47_hires.png",
+    "nationalPokedexNumber": 50,
+    "evolvesTo": [
+      "Dugtrio"
+    ]
+  },
+  {
+    "id": "base1-48",
+    "name": "Doduo",
+    "imageUrl": "https://images.pokemontcg.io/base1/48.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "50",
+    "convertedRetreatCost": 0,
+    "number": "48",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Fury Attack",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10×",
+        "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/48_hires.png",
+    "nationalPokedexNumber": 84,
+    "evolvesTo": [
+      "Dodrio"
+    ]
+  },
+  {
+    "id": "base1-49",
+    "name": "Drowzee",
+    "imageUrl": "https://images.pokemontcg.io/base1/49.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "50",
+    "convertedRetreatCost": 0,
+    "number": "49",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Pound",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Confuse Ray",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/49_hires.png",
+    "nationalPokedexNumber": 96,
+    "evolvesTo": [
+      "Hypno"
+    ]
+  },
+  {
+    "id": "base1-50",
+    "name": "Gastly",
+    "imageUrl": "https://images.pokemontcg.io/base1/50.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "30",
+    "convertedRetreatCost": 0,
+    "number": "50",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Sleeping Gas",
+        "cost": [
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Destiny Bond",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Discard 1 Energy card attached to Gastly in order to use this attack. If a Pokémon Knocks Out Gastly during your opponent's next turn, Knock Out that Pokémon."
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/50_hires.png",
+    "nationalPokedexNumber": 92,
+    "evolvesTo": [
+      "Haunter"
+    ]
+  },
+  {
+    "id": "base1-51",
+    "name": "Koffing",
+    "imageUrl": "https://images.pokemontcg.io/base1/51.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "51",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Foul Gas",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned; if tails, it is now Confused."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/51_hires.png",
+    "nationalPokedexNumber": 109,
+    "evolvesTo": [
+      "Weezing"
+    ]
+  },
+  {
+    "id": "base1-52",
+    "name": "Machop",
+    "imageUrl": "https://images.pokemontcg.io/base1/52.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "20",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "52",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Low Kick",
+        "cost": [
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/52_hires.png",
+    "nationalPokedexNumber": 66,
+    "evolvesTo": [
+      "Machoke"
+    ]
+  },
+  {
+    "id": "base1-53",
+    "name": "Magnemite",
+    "imageUrl": "https://images.pokemontcg.io/base1/53.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "53",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Thunder Wave",
+        "cost": [
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Selfdestruct",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "40",
+        "text": "Does 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magnemite does 40 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/53_hires.png",
+    "nationalPokedexNumber": 81,
+    "evolvesTo": [
+      "Magneton"
+    ]
+  },
+  {
+    "id": "base1-54",
+    "name": "Metapod",
+    "imageUrl": "https://images.pokemontcg.io/base1/54.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "21",
+    "evolvesFrom": "Caterpie",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "54",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Stiffen",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, prevent all damage done to Metapod during your opponent's next turn. (Any other effects of attacks still happen.)"
+      },
+      {
+        "name": "Stun Spore",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/54_hires.png",
+    "nationalPokedexNumber": 11,
+    "evolvesTo": [
+      "Butterfree"
+    ]
+  },
+  {
+    "id": "base1-55",
+    "name": "Nidoran♂",
+    "imageUrl": "https://images.pokemontcg.io/base1/55.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "20",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "55",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Horn Hazard",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/55_hires.png",
+    "nationalPokedexNumber": 32,
+    "evolvesTo": [
+      "Nidorino"
+    ]
+  },
+  {
+    "id": "base1-56",
+    "name": "Onix",
+    "imageUrl": "https://images.pokemontcg.io/base1/56.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "56",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Rock Throw",
+        "cost": [
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Harden",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "During opponent's next turn, whenever 30 or less damage is done to Onix (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/56_hires.png",
+    "nationalPokedexNumber": 95,
+    "evolvesTo": [
+      "Steelix"
+    ]
+  },
+  {
+    "id": "base1-57",
+    "name": "Pidgey",
+    "imageUrl": "https://images.pokemontcg.io/base1/57.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "57",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Whirlwind",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/57_hires.png",
+    "nationalPokedexNumber": 16,
+    "evolvesTo": [
+      "Pidgeotto"
+    ]
+  },
+  {
+    "id": "base1-58",
+    "name": "Pikachu",
+    "imageUrl": "https://images.pokemontcg.io/base1/58.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "58",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Gnaw",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Thunder Jolt",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": "Flip a coin. If tails, Pikachu does 10 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/58_hires.png",
+    "nationalPokedexNumber": 25,
+    "evolvesTo": [
+      "Raichu"
+    ]
+  },
+  {
+    "id": "base1-59",
+    "name": "Poliwag",
+    "imageUrl": "https://images.pokemontcg.io/base1/59.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "59",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Water Gun",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 damage for each Energy attached to Poliwag but not used to pay for this attack's Energy cost. Extra Energy after the end don't count."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/59_hires.png",
+    "nationalPokedexNumber": 60,
+    "evolvesTo": [
+      "Poliwhirl"
+    ]
+  },
+  {
+    "id": "base1-60",
+    "name": "Ponyta",
+    "imageUrl": "https://images.pokemontcg.io/base1/60.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "60",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Smash Kick",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Flame Tail",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/60_hires.png",
+    "nationalPokedexNumber": 77,
+    "evolvesTo": [
+      "Rapidash"
+    ]
+  },
+  {
+    "id": "base1-61",
+    "name": "Rattata",
+    "imageUrl": "https://images.pokemontcg.io/base1/61.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "9",
+    "hp": "30",
+    "convertedRetreatCost": 0,
+    "number": "61",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/61_hires.png",
+    "nationalPokedexNumber": 19,
+    "evolvesTo": [
+      "Raticate"
+    ]
+  },
+  {
+    "id": "base1-62",
+    "name": "Sandshrew",
+    "imageUrl": "https://images.pokemontcg.io/base1/62.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "62",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Sand-attack",
+        "cost": [
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/62_hires.png",
+    "nationalPokedexNumber": 27,
+    "evolvesTo": [
+      "Sandslash"
+    ]
+  },
+  {
+    "id": "base1-63",
+    "name": "Squirtle",
+    "imageUrl": "https://images.pokemontcg.io/base1/63.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "63",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Bubble",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Withdraw",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, prevent all damage done to Squirtle during your opponent's next turn. (Any other effects of attacks still happen.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/63_hires.png",
+    "nationalPokedexNumber": 7,
+    "evolvesTo": [
+      "Wartortle"
+    ]
+  },
+  {
+    "id": "base1-64",
+    "name": "Starmie",
+    "imageUrl": "https://images.pokemontcg.io/base1/64.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Staryu",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "64",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Recover",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Discard 1 Energy card to Starmie in order to use this attack. Remove all damage counters from Starmie."
+      },
+      {
+        "name": "Star Freeze",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/64_hires.png",
+    "nationalPokedexNumber": 121
+  },
+  {
+    "id": "base1-65",
+    "name": "Staryu",
+    "imageUrl": "https://images.pokemontcg.io/base1/65.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "15",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "65",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Slap",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/65_hires.png",
+    "nationalPokedexNumber": 120,
+    "evolvesTo": [
+      "Starmie"
+    ]
+  },
+  {
+    "id": "base1-66",
+    "name": "Tangela",
+    "imageUrl": "https://images.pokemontcg.io/base1/66.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "66",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Bind",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Poisonpowder",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "The Defending Pokémon is now Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/66_hires.png",
+    "nationalPokedexNumber": 114,
+    "evolvesTo": [
+      "Tangrowth"
+    ]
+  },
+  {
+    "id": "base1-67",
+    "name": "Voltorb",
+    "imageUrl": "https://images.pokemontcg.io/base1/67.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "67",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/67_hires.png",
+    "nationalPokedexNumber": 100,
+    "evolvesTo": [
+      "Electrode"
+    ]
+  },
+  {
+    "id": "base1-68",
+    "name": "Vulpix",
+    "imageUrl": "https://images.pokemontcg.io/base1/68.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "11",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "68",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Confuse Ray",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/68_hires.png",
+    "nationalPokedexNumber": 37,
+    "evolvesTo": [
+      "Ninetales"
+    ]
+  },
+  {
+    "id": "base1-69",
+    "name": "Weedle",
+    "imageUrl": "https://images.pokemontcg.io/base1/69.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "69",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Poison Sting",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, Defending Pokémon is now Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/69_hires.png",
+    "nationalPokedexNumber": 13,
+    "evolvesTo": [
+      "Kakuna"
+    ]
+  },
+  {
+    "id": "base1-70",
+    "name": "Clefairy Doll",
+    "imageUrl": "https://images.pokemontcg.io/base1/70.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "hp": "10",
+    "number": "70",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts as a Pokémon (instead of a Trainer card.) Clefairy Doll has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn't count as a Knock Out Pokémon. At any time during tyour turn before your attack, you may discard Clefairy Doll."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/70_hires.png"
+  },
+  {
+    "id": "base1-71",
+    "name": "Computer Search",
+    "imageUrl": "https://images.pokemontcg.io/base1/71.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "71",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Discard 2 other cards from your hand in order to search your deck for any card and put it into your hand. Shuffle your deck afterward."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/71_hires.png"
+  },
+  {
+    "id": "base1-72",
+    "name": "Devolution Spray",
+    "imageUrl": "https://images.pokemontcg.io/base1/72.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "72",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Choose 1 of your own Pokémon in play and a Stage of Evolution. Discard all Evolution cards of that Stage or higher attached to that Pokémon. That Pokémon is no longer Asleep, Confused, Paralyzed, Poisoned, or anything else that might be the result of an attack (just as if you had evolved it)."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/72_hires.png"
+  },
+  {
+    "id": "base1-73",
+    "name": "Impostor Professor Oak",
+    "imageUrl": "https://images.pokemontcg.io/base1/73.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "73",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Your opponent shuffles his or her hand into his or her deck, then draws 7 cards."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/73_hires.png"
+  },
+  {
+    "id": "base1-74",
+    "name": "Item Finder",
+    "imageUrl": "https://images.pokemontcg.io/base1/74.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "74",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Discard 2 other cards from your hand in order to put a Trainer card from your discard pile into your hand."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/74_hires.png"
+  },
+  {
+    "id": "base1-75",
+    "name": "Lass",
+    "imageUrl": "https://images.pokemontcg.io/base1/75.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "75",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "You and your opponent show each other your hands, then shuffle all the trainer cards from your hands into your decks."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/75_hires.png"
+  },
+  {
+    "id": "base1-76",
+    "name": "Pokémon Breeder",
+    "imageUrl": "https://images.pokemontcg.io/base1/76.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "76",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can only play this card when you would be allowed to evolve that Pokémon anyway."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/76_hires.png"
+  },
+  {
+    "id": "base1-77",
+    "name": "Pokémon Trader",
+    "imageUrl": "https://images.pokemontcg.io/base1/77.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "77",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/77_hires.png"
+  },
+  {
+    "id": "base1-78",
+    "name": "Scoop Up",
+    "imageUrl": "https://images.pokemontcg.io/base1/78.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "78",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Choose 1 of your own Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)"
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/78_hires.png"
+  },
+  {
+    "id": "base1-79",
+    "name": "Super Energy Removal",
+    "imageUrl": "https://images.pokemontcg.io/base1/79.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "79",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Discard 1 Energy card attached to 1 of your own Pokémon in order to choose 1 of your opponent's Pokémon and up to 2 Energy cards attached to it. Discard those energy cards."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/79_hires.png"
+  },
+  {
+    "id": "base1-80",
+    "name": "Defender",
+    "imageUrl": "https://images.pokemontcg.io/base1/80.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "80",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Attach Defender to 1 of your Pokémon. At the end of your opponent's next turn, discard Defender. Damage done to that Pokémon by attacks is reduced by 20 (after applying Weakness and Resistance.)"
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/80_hires.png"
+  },
+  {
+    "id": "base1-81",
+    "name": "Energy Retrieval",
+    "imageUrl": "https://images.pokemontcg.io/base1/81.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "81",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Trade 1 of other cards in your hand for up to 2 basic Energy cards from your discard pile."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/81_hires.png"
+  },
+  {
+    "id": "base1-82",
+    "name": "Full Heal",
+    "imageUrl": "https://images.pokemontcg.io/base1/82.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "82",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Your Active Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/82_hires.png"
+  },
+  {
+    "id": "base1-83",
+    "name": "Maintenance",
+    "imageUrl": "https://images.pokemontcg.io/base1/83.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "83",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Shuffle 2 of the other cards from your hand into your deck in order to draw a card."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/83_hires.png"
+  },
+  {
+    "id": "base1-84",
+    "name": "PlusPower",
+    "imageUrl": "https://images.pokemontcg.io/base1/84.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "84",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Attach PlusPower to your Active Pokémonn. At the end of your turn, discard PlusPower. If this Pokémon's attack does damage to the defending Pokémon (after applying Weakness and Resistance), the attack does 10 more damage to the Defending Pokémon."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/84_hires.png"
+  },
+  {
+    "id": "base1-85",
+    "name": "Pokémon Center",
+    "imageUrl": "https://images.pokemontcg.io/base1/85.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "85",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Remove all damage counters from all of your own Pokémon with damage counters on them, then discard all Energy cards attached to those Pokémon."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/85_hires.png"
+  },
+  {
+    "id": "base1-86",
+    "name": "Pokémon Flute",
+    "imageUrl": "https://images.pokemontcg.io/base1/86.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "86",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Choose 1 Basic Pokémon card from your opponent's discard pile and put it on his or her Bench. (You can't play Pokémon Flute if your opponent's Bench is full.)"
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/86_hires.png"
+  },
+  {
+    "id": "base1-87",
+    "name": "Pokédex",
+    "imageUrl": "https://images.pokemontcg.io/base1/87.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "87",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Look at up to 5 cards from the top of your deck and rearrange them as you like."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/87_hires.png"
+  },
+  {
+    "id": "base1-88",
+    "name": "Professor Oak",
+    "imageUrl": "https://images.pokemontcg.io/base1/88.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "88",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Discard your hand, then draw 7 cards."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/88_hires.png"
+  },
+  {
+    "id": "base1-89",
+    "name": "Revive",
+    "imageUrl": "https://images.pokemontcg.io/base1/89.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "89",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Put 1 Basic Pokémon card from your discard pile onto your Bench. Put damage counters on that Pokémon equal to half its (rounded down to the nearest 10). (You can't play Revive if your Bench is full.)"
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/89_hires.png"
+  },
+  {
+    "id": "base1-90",
+    "name": "Super Potion",
+    "imageUrl": "https://images.pokemontcg.io/base1/90.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "90",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Discard 1 Energy card attached to 1 of your own Pokémon in order to remove up to 4 damage counters from that Pokémon."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/90_hires.png"
+  },
+  {
+    "id": "base1-91",
+    "name": "Bill",
+    "imageUrl": "https://images.pokemontcg.io/base1/91.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "91",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Draw 2 cards."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/91_hires.png"
+  },
+  {
+    "id": "base1-92",
+    "name": "Energy Removal",
+    "imageUrl": "https://images.pokemontcg.io/base1/92.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "92",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Choose 1 Energy card attached to 1 of your opponent's Pokémon and discard it."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/92_hires.png"
+  },
+  {
+    "id": "base1-93",
+    "name": "Gust of Wind",
+    "imageUrl": "https://images.pokemontcg.io/base1/93.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "93",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/93_hires.png"
+  },
+  {
+    "id": "base1-94",
+    "name": "Potion",
+    "imageUrl": "https://images.pokemontcg.io/base1/94.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "94",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Remove up to 2 damage counters from 1 of your Pokémon."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/94_hires.png"
+  },
+  {
+    "id": "base1-95",
+    "name": "Switch",
+    "imageUrl": "https://images.pokemontcg.io/base1/95.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "95",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Switch 1 of your Benched Pokémon with your Active Pokémon."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/95_hires.png"
+  },
+  {
+    "id": "base1-96",
+    "name": "Double Colorless Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/96.png",
+    "subType": { "id": 2},
+    "superType": { "id": 1 },
+    "number": "96",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "text": [
+      "Provides energy. Doesn't count as a basic energy card."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/96_hires.png"
+  },
+  {
+    "id": "base1-97",
+    "name": "Fighting Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/97.png",
+    "subType": { "id": 13},
+    "superType": { "id": 1 },
+    "number": "97",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/97_hires.png"
+  },
+  {
+    "id": "base1-98",
+    "name": "Fire Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/98.png",
+    "subType": { "id": 13},
+    "superType": { "id": 1 },
+    "number": "98",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/98_hires.png"
+  },
+  {
+    "id": "base1-99",
+    "name": "Grass Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/99.png",
+    "subType": { "id": 13},
+    "superType": { "id": 1 },
+    "number": "99",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/99_hires.png"
+  },
+  {
+    "id": "base1-100",
+    "name": "Lightning Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/100.png",
+    "subType": { "id": 13},
+    "superType": { "id": 1 },
+    "number": "100",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/100_hires.png"
+  },
+  {
+    "id": "base1-101",
+    "name": "Psychic Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/101.png",
+    "subType": { "id": 13},
+    "superType": { "id": 1 },
+    "number": "101",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/101_hires.png"
+  },
+  {
+    "id": "base1-102",
+    "name": "Water Energy",
+    "imageUrl": "https://images.pokemontcg.io/base1/102.png",
+    "subType": { "id": 13},
+    "superType": { "id": 1 },
+    "number": "102",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 1 },
+    "setCode": "base1",
+    "imageUrlHiRes": "https://images.pokemontcg.io/base1/102_hires.png"
+  },
+  {
+    "id": "base2-1",
+    "name": "Clefable",
+    "imageUrl": "https://images.pokemontcg.io/base2/1.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "34",
+    "evolvesFrom": "Clefairy",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": 1,
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Metronome",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefable's type is still Colorless.)"
+      },
+      {
+        "name": "Minimize",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "All damage done by attacks to Clefable during your opponent's next turn is reduce by 20 (after applying Weakness and Resistance)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/1_hires.png",
+    "nationalPokedexNumber": 36
+  },
+  {
+    "id": "base2-2",
+    "name": "Electrode",
+    "imageUrl": "https://images.pokemontcg.io/base2/2.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Voltorb",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": 2,
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Chain Lightning",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20",
+        "text": "If the Defending Pokémon isn't Colorless, this attack does 10 damage to each Benched Pokémon of the same type as the Defending Pokémon (including your own)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/2_hires.png",
+    "nationalPokedexNumber": 101
+  },
+  {
+    "id": "base2-3",
+    "name": "Flareon",
+    "imageUrl": "https://images.pokemontcg.io/base2/3.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Eevee",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "3",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      },
+      {
+        "name": "Flamethrower",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": "Discard 1 Energy card attached to Flareon in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/3_hires.png",
+    "nationalPokedexNumber": 136
+  },
+  {
+    "id": "base2-4",
+    "name": "Jolteon",
+    "imageUrl": "https://images.pokemontcg.io/base2/4.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "29",
+    "evolvesFrom": "Eevee",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "4",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      },
+      {
+        "name": "Pin Missile",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20×",
+        "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/4_hires.png",
+    "nationalPokedexNumber": 135
+  },
+  {
+    "id": "base2-5",
+    "name": "Kangaskhan",
+    "imageUrl": "https://images.pokemontcg.io/base2/5.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "40",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "5",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Fetch",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Draw a card."
+      },
+      {
+        "name": "Comet Punch",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "20×",
+        "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/5_hires.png",
+    "nationalPokedexNumber": 115
+  },
+  {
+    "id": "base2-6",
+    "name": "Mr. Mime",
+    "imageUrl": "https://images.pokemontcg.io/base2/6.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Mime Jr.",
+    "ability": { "id" : 7 },
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "6",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Meditate",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each damage counter on the Defending Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/6_hires.png",
+    "nationalPokedexNumber": 122
+  },
+  {
+    "id": "base2-7",
+    "name": "Nidoqueen",
+    "imageUrl": "https://images.pokemontcg.io/base2/7.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "43",
+    "evolvesFrom": "Nidorina",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "7",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Boyfriends",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20+",
+        "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play."
+      },
+      {
+        "name": "Mega Punch",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/7_hires.png",
+    "nationalPokedexNumber": 31
+  },
+  {
+    "id": "base2-8",
+    "name": "Pidgeot",
+    "imageUrl": "https://images.pokemontcg.io/base2/8.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "40",
+    "evolvesFrom": "Pidgeotto",
+    "hp": "80",
+    "convertedRetreatCost": 0,
+    "number": "8",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Wing Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Hurricane",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/8_hires.png",
+    "nationalPokedexNumber": 18
+  },
+  {
+    "id": "base2-9",
+    "name": "Pinsir",
+    "imageUrl": "https://images.pokemontcg.io/base2/9.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "24",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "9",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Irongrip",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Guillotine",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/9_hires.png",
+    "nationalPokedexNumber": 127
+  },
+  {
+    "id": "base2-10",
+    "name": "Scyther",
+    "imageUrl": "https://images.pokemontcg.io/base2/10.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "25",
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "10",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Swords Dance",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, Scyther's Slash attack's base damage is 60 instead of 30."
+      },
+      {
+        "name": "Slash",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/10_hires.png",
+    "nationalPokedexNumber": 123,
+    "evolvesTo": [
+      "Scizor"
+    ]
+  },
+  {
+    "id": "base2-11",
+    "name": "Snorlax",
+    "imageUrl": "https://images.pokemontcg.io/base2/11.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "20",
+    "evolvesFrom": "Munchlax",
+    "ability": { "id" : 8 },
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 4,
+    "number": "11",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Body Slam",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "30",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/11_hires.png",
+    "nationalPokedexNumber": 143
+  },
+  {
+    "id": "base2-12",
+    "name": "Vaporeon",
+    "imageUrl": "https://images.pokemontcg.io/base2/12.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Eevee",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "12",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      },
+      {
+        "name": "Water Gun",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "Does 30 damage plus 10 more damage for each Energy attached to Vaporeon but not used to pay for this attack's Energy cost. Extra Energy after the 2nd doesn't count."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/12_hires.png",
+    "nationalPokedexNumber": 134
+  },
+  {
+    "id": "base2-13",
+    "name": "Venomoth",
+    "imageUrl": "https://images.pokemontcg.io/base2/13.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Venonat",
+    "ability": { "id" : 9 },
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "13",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Venom Powder",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Confused and Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/13_hires.png",
+    "nationalPokedexNumber": 49
+  },
+  {
+    "id": "base2-14",
+    "name": "Victreebel",
+    "imageUrl": "https://images.pokemontcg.io/base2/14.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Weepinbell",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "14",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Lure",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon."
+      },
+      {
+        "name": "Acid",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon can't retreat during your opponent's next turn."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/14_hires.png",
+    "nationalPokedexNumber": 71
+  },
+  {
+    "id": "base2-15",
+    "name": "Vileplume",
+    "imageUrl": "https://images.pokemontcg.io/base2/15.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "35",
+    "evolvesFrom": "Gloom",
+    "ability": { "id": 10 },
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "15",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Petal Dance",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40×",
+        "text": "Flip 3 coins. This attack does 40 damage times the number of heads. Vileplume is now Confused (after doing damage)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/15_hires.png",
+    "nationalPokedexNumber": 45
+  },
+  {
+    "id": "base2-16",
+    "name": "Wigglytuff",
+    "imageUrl": "https://images.pokemontcg.io/base2/16.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "36",
+    "evolvesFrom": "Jigglypuff",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "16",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Lullaby",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Do the Wave",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each of your Benched Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/16_hires.png",
+    "nationalPokedexNumber": 40
+  },
+  {
+    "id": "base2-17",
+    "name": "Clefable",
+    "imageUrl": "https://images.pokemontcg.io/base2/17.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "34",
+    "evolvesFrom": "Clefairy",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "17",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Metronome",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose 1 of the Defending Pokémon's attacks. Metronome copies that attack except for its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type the Defending Pokémon is, Clefable's type is still Colorless.)"
+      },
+      {
+        "name": "Minimize",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "All damage done by attacks to Clefable during your opponent's next turn is reduce by 20 (after applying Weakness and Resistance)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/17_hires.png",
+    "nationalPokedexNumber": 36
+  },
+  {
+    "id": "base2-18",
+    "name": "Electrode",
+    "imageUrl": "https://images.pokemontcg.io/base2/18.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Voltorb",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "18",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Chain Lightning",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20",
+        "text": "If the Defending Pokémon isn't Colorless, this attack does 10 damage to each Benched Pokémon of the same type as the Defending Pokémon (including your own)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/18_hires.png",
+    "nationalPokedexNumber": 101
+  },
+  {
+    "id": "base2-19",
+    "name": "Flareon",
+    "imageUrl": "https://images.pokemontcg.io/base2/19.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Eevee",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "19",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      },
+      {
+        "name": "Flamethrower",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "60",
+        "text": "Discard 1 Energy card attached to Flareon in order to use this attack."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/19_hires.png",
+    "nationalPokedexNumber": 136
+  },
+  {
+    "id": "base2-20",
+    "name": "Jolteon",
+    "imageUrl": "https://images.pokemontcg.io/base2/20.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "29",
+    "evolvesFrom": "Eevee",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "20",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      },
+      {
+        "name": "Pin Missile",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20×",
+        "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/20_hires.png",
+    "nationalPokedexNumber": 135
+  },
+  {
+    "id": "base2-21",
+    "name": "Kangaskhan",
+    "imageUrl": "https://images.pokemontcg.io/base2/21.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "40",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "21",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Fetch",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Draw a card."
+      },
+      {
+        "name": "Comet Punch",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "20×",
+        "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/21_hires.png",
+    "nationalPokedexNumber": 115
+  },
+  {
+    "id": "base2-22",
+    "name": "Mr. Mime",
+    "imageUrl": "https://images.pokemontcg.io/base2/22.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Mime Jr.",
+    "ability": { "id" : 7 },
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "22",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 10 }
+    ],
+    "attacks": [
+      {
+        "name": "Meditate",
+        "cost": [
+          { "id" : 10 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each damage counter on the Defending Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/22_hires.png",
+    "nationalPokedexNumber": 122
+  },
+  {
+    "id": "base2-23",
+    "name": "Nidoqueen",
+    "imageUrl": "https://images.pokemontcg.io/base2/23.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "43",
+    "evolvesFrom": "Nidorina",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "23",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Boyfriends",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20+",
+        "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play."
+      },
+      {
+        "name": "Mega Punch",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/23_hires.png",
+    "nationalPokedexNumber": 31
+  },
+  {
+    "id": "base2-24",
+    "name": "Pidgeot",
+    "imageUrl": "https://images.pokemontcg.io/base2/24.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "40",
+    "evolvesFrom": "Pidgeotto",
+    "hp": "80",
+    "convertedRetreatCost": 0,
+    "number": "24",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Wing Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Hurricane",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/24_hires.png",
+    "nationalPokedexNumber": 18
+  },
+  {
+    "id": "base2-25",
+    "name": "Pinsir",
+    "imageUrl": "https://images.pokemontcg.io/base2/25.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "24",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "25",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Irongrip",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Guillotine",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/25_hires.png",
+    "nationalPokedexNumber": 127
+  },
+  {
+    "id": "base2-26",
+    "name": "Scyther",
+    "imageUrl": "https://images.pokemontcg.io/base2/26.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "25",
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "26",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Swords Dance",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, Scyther's Slash attack's base damage is 60 instead of 30."
+      },
+      {
+        "name": "Slash",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/26_hires.png",
+    "nationalPokedexNumber": 123,
+    "evolvesTo": [
+      "Scizor"
+    ]
+  },
+  {
+    "id": "base2-27",
+    "name": "Snorlax",
+    "imageUrl": "https://images.pokemontcg.io/base2/27.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "20",
+    "evolvesFrom": "Munchlax",
+    "ability": { "id" : 8 },
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 4,
+    "number": "27",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Body Slam",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "30",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/27_hires.png",
+    "nationalPokedexNumber": 143
+  },
+  {
+    "id": "base2-28",
+    "name": "Vaporeon",
+    "imageUrl": "https://images.pokemontcg.io/base2/28.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Eevee",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "28",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      },
+      {
+        "name": "Water Gun",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "Does 30 damage plus 10 more damage for each Energy attached to Vaporeon but not used to pay for this attack's Energy cost. Extra Energy after the 2nd doesn't count."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/28_hires.png",
+    "nationalPokedexNumber": 134
+  },
+  {
+    "id": "base2-29",
+    "name": "Venomoth",
+    "imageUrl": "https://images.pokemontcg.io/base2/29.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Venonat",
+    "ability": { "id" : 9 },
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "29",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Venom Powder",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Confused and Poisoned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/29_hires.png",
+    "nationalPokedexNumber": 49
+  },
+  {
+    "id": "base2-30",
+    "name": "Victreebel",
+    "imageUrl": "https://images.pokemontcg.io/base2/30.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "42",
+    "evolvesFrom": "Weepinbell",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "30",
+    "artist": "Ken Sugimori",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Lure",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon."
+      },
+      {
+        "name": "Acid",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, the Defending Pokémon can't retreat during your opponent's next turn."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/30_hires.png",
+    "nationalPokedexNumber": 71
+  },
+  {
+    "id": "base2-31",
+    "name": "Vileplume",
+    "imageUrl": "https://images.pokemontcg.io/base2/31.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "35",
+    "evolvesFrom": "Gloom",
+    "ability": { "id" : 10  },
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "31",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Petal Dance",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40×",
+        "text": "Flip 3 coins. This attack does 40 damage times the number of heads. Vileplume is now Confused (after doing damage)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/31_hires.png",
+    "nationalPokedexNumber": 45
+  },
+  {
+    "id": "base2-32",
+    "name": "Wigglytuff",
+    "imageUrl": "https://images.pokemontcg.io/base2/32.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "36",
+    "evolvesFrom": "Jigglypuff",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "32",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Rare",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Lullaby",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Do the Wave",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each of your Benched Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/32_hires.png",
+    "nationalPokedexNumber": 40
+  },
+  {
+    "id": "base2-33",
+    "name": "Butterfree",
+    "imageUrl": "https://images.pokemontcg.io/base2/33.png",
+    "subType": { "id": 16 },
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Metapod",
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "33",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Whirlwind",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+      },
+      {
+        "name": "Mega Drain",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "40",
+        "text": "Remove a number of damage counters from Butterfree equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/33_hires.png",
+    "nationalPokedexNumber": 12
+  },
+  {
+    "id": "base2-34",
+    "name": "Dodrio",
+    "imageUrl": "https://images.pokemontcg.io/base2/34.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Doduo",
+    "ability": { "id" : 11 },
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "34",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Rage",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each damage counter on Dodrio."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/34_hires.png",
+    "nationalPokedexNumber": 85
+  },
+  {
+    "id": "base2-35",
+    "name": "Exeggutor",
+    "imageUrl": "https://images.pokemontcg.io/base2/35.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "35",
+    "evolvesFrom": "Exeggcute",
+    "hp": "80",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "35",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Teleport",
+        "cost": [
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Switch Exeggutor with 1 of your Benched Pokémon."
+      },
+      {
+        "name": "Big Eggsplosion",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20×",
+        "text": "Flip a number of coins equal to the number of Energy attached to Exeggutor. This attack does 20 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/35_hires.png",
+    "nationalPokedexNumber": 103
+  },
+  {
+    "id": "base2-36",
+    "name": "Fearow",
+    "imageUrl": "https://images.pokemontcg.io/base2/36.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "27",
+    "evolvesFrom": "Spearow",
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "36",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Agility",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20",
+        "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Fearow."
+      },
+      {
+        "name": "Drill Peck",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "40",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/36_hires.png",
+    "nationalPokedexNumber": 22
+  },
+  {
+    "id": "base2-37",
+    "name": "Gloom",
+    "imageUrl": "https://images.pokemontcg.io/base2/37.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "35",
+    "evolvesFrom": "Oddish",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "37",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Poisonpowder",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "The Defending Pokémon is now Poisoned."
+      },
+      {
+        "name": "Foul Odor",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Both the Defending Pokémon and Gloom are now Confused (after doing damage)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/37_hires.png",
+    "nationalPokedexNumber": 44,
+    "evolvesTo": [
+      "Vileplume",
+      "Bellossom"
+    ]
+  },
+  {
+    "id": "base2-38",
+    "name": "Lickitung",
+    "imageUrl": "https://images.pokemontcg.io/base2/38.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "10",
+    "hp": "90",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "38",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Tongue Wrap",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Supersonic",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/38_hires.png",
+    "nationalPokedexNumber": 108,
+    "evolvesTo": [
+      "Lickilicky"
+    ]
+  },
+  {
+    "id": "base2-39",
+    "name": "Marowak",
+    "imageUrl": "https://images.pokemontcg.io/base2/39.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "26",
+    "evolvesFrom": "Cubone",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "39",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Bonemerang",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30×",
+        "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+      },
+      {
+        "name": "Call for Friend",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Search your deck for a Fighting Basic Pokémon card and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/39_hires.png",
+    "nationalPokedexNumber": 105
+  },
+  {
+    "id": "base2-40",
+    "name": "Nidorina",
+    "imageUrl": "https://images.pokemontcg.io/base2/40.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "24",
+    "evolvesFrom": "Nidoran♀",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "40",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Supersonic",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+      },
+      {
+        "name": "Double Kick",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30×",
+        "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/40_hires.png",
+    "nationalPokedexNumber": 30,
+    "evolvesTo": [
+      "Nidoqueen"
+    ]
+  },
+  {
+    "id": "base2-41",
+    "name": "Parasect",
+    "imageUrl": "https://images.pokemontcg.io/base2/41.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Paras",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "41",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Spore",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Slash",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/41_hires.png",
+    "nationalPokedexNumber": 47
+  },
+  {
+    "id": "base2-42",
+    "name": "Persian",
+    "imageUrl": "https://images.pokemontcg.io/base2/42.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "25",
+    "evolvesFrom": "Meowth",
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "42",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Scratch",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Pounce",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "If the Defending Pokémon attacks Persian during your opponent's next turn, any damage done by the attack is reduce by 10 (after applying Weakness and Resistance). (Benching either Pokémon ends this effect.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/42_hires.png",
+    "nationalPokedexNumber": 53
+  },
+  {
+    "id": "base2-43",
+    "name": "Primeape",
+    "imageUrl": "https://images.pokemontcg.io/base2/43.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "45",
+    "evolvesFrom": "Mankey",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "43",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Fury Swipes",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20×",
+        "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+      },
+      {
+        "name": "Tantrum",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": "Flip a coin. If tails, Primeape is now Confused (after doing damage)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/43_hires.png",
+    "nationalPokedexNumber": 57
+  },
+  {
+    "id": "base2-44",
+    "name": "Rapidash",
+    "imageUrl": "https://images.pokemontcg.io/base2/44.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "33",
+    "evolvesFrom": "Ponyta",
+    "hp": "70",
+    "convertedRetreatCost": 0,
+    "number": "44",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 6 }
+    ],
+    "attacks": [
+      {
+        "name": "Stomp",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+      },
+      {
+        "name": "Agility",
+        "cost": [
+          { "id" : 6 },
+          { "id" : 6 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Rapidash."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 11 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/44_hires.png",
+    "nationalPokedexNumber": 78
+  },
+  {
+    "id": "base2-45",
+    "name": "Rhydon",
+    "imageUrl": "https://images.pokemontcg.io/base2/45.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "48",
+    "evolvesFrom": "Rhyhorn",
+    "hp": "100",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "45",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Horn Attack",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Ram",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": "Rhydon does 20 damage to itself. If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon. Switch the Pokémon even if Rhydon is knocked out.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/45_hires.png",
+    "nationalPokedexNumber": 112,
+    "evolvesTo": [
+      "Rhyperior"
+    ]
+  },
+  {
+    "id": "base2-46",
+    "name": "Seaking",
+    "imageUrl": "https://images.pokemontcg.io/base2/46.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Goldeen",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "46",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Horn Attack",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Waterfall",
+        "cost": [
+          { "id" : 11 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/46_hires.png",
+    "nationalPokedexNumber": 119
+  },
+  {
+    "id": "base2-47",
+    "name": "Tauros",
+    "imageUrl": "https://images.pokemontcg.io/base2/47.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "24",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 2,
+    "number": "47",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Stomp",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+      },
+      {
+        "name": "Rampage",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20+",
+        "text": "Does 20 damage plus 10 more damage for each damage counter on Tauros. Flip a coin. If tails, Tauros is now Confused (after doing damage)."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/47_hires.png",
+    "nationalPokedexNumber": 128
+  },
+  {
+    "id": "base2-48",
+    "name": "Weepinbell",
+    "imageUrl": "https://images.pokemontcg.io/base2/48.png",
+    "subType": { "id": 10},
+    "superType": { "id": 2 },
+    "level": "28",
+    "evolvesFrom": "Bellsprout",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "48",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Uncommon",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Poisonpowder",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+      },
+      {
+        "name": "Razor Leaf",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/48_hires.png",
+    "nationalPokedexNumber": 70,
+    "evolvesTo": [
+      "Victreebel"
+    ]
+  },
+  {
+    "id": "base2-49",
+    "name": "Bellsprout",
+    "imageUrl": "https://images.pokemontcg.io/base2/49.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "11",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "49",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Vine Whip",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Call for Family",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Search your deck for a Basic Pokémon named Bellsprout and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/49_hires.png",
+    "nationalPokedexNumber": 69,
+    "evolvesTo": [
+      "Weepinbell"
+    ]
+  },
+  {
+    "id": "base2-50",
+    "name": "Cubone",
+    "imageUrl": "https://images.pokemontcg.io/base2/50.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "50",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Snivel",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If the Defending Pokémon attacks Cubone during your opponent's next turn, any damage done by the attack is reduced by 20 (after applying Weakness and Resistance). (Benching either Pokémon ends this effect.)"
+      },
+      {
+        "name": "Rage",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 5 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Does 10 damage plus 10 more damage for each damage counter on Cubone."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/50_hires.png",
+    "nationalPokedexNumber": 104,
+    "evolvesTo": [
+      "Marowak"
+    ]
+  },
+  {
+    "id": "base2-51",
+    "name": "Eevee",
+    "imageUrl": "https://images.pokemontcg.io/base2/51.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "51",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Tail Wag",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon can't attack Eevee during your opponent's next turn. (Benching either Pokémon ends this effect.)"
+      },
+      {
+        "name": "Quick Attack",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/51_hires.png",
+    "nationalPokedexNumber": 133,
+    "evolvesTo": [
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Sylveon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon"
+    ]
+  },
+  {
+    "id": "base2-52",
+    "name": "Exeggcute",
+    "imageUrl": "https://images.pokemontcg.io/base2/52.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "14",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "52",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Hypnosis",
+        "cost": [
+          { "id" : 10 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Leech Seed",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Exeggcute."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/52_hires.png",
+    "nationalPokedexNumber": 102,
+    "evolvesTo": [
+      "Exeggutor"
+    ]
+  },
+  {
+    "id": "base2-53",
+    "name": "Goldeen",
+    "imageUrl": "https://images.pokemontcg.io/base2/53.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "40",
+    "convertedRetreatCost": 0,
+    "number": "53",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 11 }
+    ],
+    "attacks": [
+      {
+        "name": "Horn Attack",
+        "cost": [
+          { "id" : 11 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/53_hires.png",
+    "nationalPokedexNumber": 118,
+    "evolvesTo": [
+      "Seaking"
+    ]
+  },
+  {
+    "id": "base2-54",
+    "name": "Jigglypuff",
+    "imageUrl": "https://images.pokemontcg.io/base2/54.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "14",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "54",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Lullaby",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      },
+      {
+        "name": "Pound",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/54_hires.png",
+    "nationalPokedexNumber": 39,
+    "evolvesTo": [
+      "Wigglytuff"
+    ]
+  },
+  {
+    "id": "base2-55",
+    "name": "Mankey",
+    "imageUrl": "https://images.pokemontcg.io/base2/55.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "7",
+    "ability": { "id" : 12 },
+    "hp": "30",
+    "convertedRetreatCost": 0,
+    "number": "55",
+    "artist": "Kagemaru Himeno",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Scratch",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/55_hires.png",
+    "nationalPokedexNumber": 56,
+    "evolvesTo": [
+      "Primeape"
+    ]
+  },
+  {
+    "id": "base2-56",
+    "name": "Meowth",
+    "imageUrl": "https://images.pokemontcg.io/base2/56.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "15",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "56",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Pay Day",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "Flip a coin. If heads, draw a card."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 10 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/56_hires.png",
+    "nationalPokedexNumber": 52,
+    "evolvesTo": [
+      "Persian"
+    ]
+  },
+  {
+    "id": "base2-57",
+    "name": "Nidoran♀",
+    "imageUrl": "https://images.pokemontcg.io/base2/57.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "60",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "57",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Fury Swipes",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10×",
+        "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+      },
+      {
+        "name": "Call for Family",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Search your deck for a Basic Pokémon named Nidoran M or Nidoran F and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 10 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/57_hires.png",
+    "nationalPokedexNumber": 29,
+    "evolvesTo": [
+      "Nidorina"
+    ]
+  },
+  {
+    "id": "base2-58",
+    "name": "Oddish",
+    "imageUrl": "https://images.pokemontcg.io/base2/58.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "58",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Stun Spore",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Sprout",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "Search your deck for a Basic Pokémon named Oddish and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/58_hires.png",
+    "nationalPokedexNumber": 43,
+    "evolvesTo": [
+      "Gloom"
+    ]
+  },
+  {
+    "id": "base2-59",
+    "name": "Paras",
+    "imageUrl": "https://images.pokemontcg.io/base2/59.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "8",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "59",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Scratch",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Spore",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "The Defending Pokémon is now Asleep."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 6 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/59_hires.png",
+    "nationalPokedexNumber": 46,
+    "evolvesTo": [
+      "Parasect"
+    ]
+  },
+  {
+    "id": "base2-60",
+    "name": "Pikachu",
+    "imageUrl": "https://images.pokemontcg.io/base2/60.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "14",
+    "evolvesFrom": "Pichu",
+    "hp": "50",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "60",
+    "artist": "Ken Sugimori",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 8 }
+    ],
+    "attacks": [
+      {
+        "name": "Spark",
+        "cost": [
+          { "id" : 8 },
+          { "id" : 8 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 5 },
+        "value": "×2"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/60_hires.png",
+    "nationalPokedexNumber": 25,
+    "evolvesTo": [
+      "Raichu"
+    ]
+  },
+  {
+    "id": "base2-61",
+    "name": "Rhyhorn",
+    "imageUrl": "https://images.pokemontcg.io/base2/61.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "18",
+    "hp": "70",
+    "retreatCost": [
+      { "id" : 1 },
+      { "id" : 1 },
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 3,
+    "number": "61",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 5 }
+    ],
+    "attacks": [
+      {
+        "name": "Leer",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, the Defending Pokémon can't attack Rhyhorn during your opponent's next turn. (Benching either Pokémon ends this effect.)"
+      },
+      {
+        "name": "Horn Attack",
+        "cost": [
+          { "id" : 5 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 7 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 8 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/61_hires.png",
+    "nationalPokedexNumber": 111,
+    "evolvesTo": [
+      "Rhydon"
+    ]
+  },
+  {
+    "id": "base2-62",
+    "name": "Spearow",
+    "imageUrl": "https://images.pokemontcg.io/base2/62.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "13",
+    "hp": "50",
+    "convertedRetreatCost": 0,
+    "number": "62",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 1 }
+    ],
+    "attacks": [
+      {
+        "name": "Peck",
+        "cost": [
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Mirror Move",
+        "cost": [
+          { "id" : 1 },
+          { "id" : 1 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "If Spearow was attacked last turn, do the final result of that attack on Spearow to the Defending Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": { "id" : 8 },
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": { "id" : 5 },
+        "value": "-30"
+      }
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/62_hires.png",
+    "nationalPokedexNumber": 21,
+    "evolvesTo": [
+      "Fearow"
+    ]
+  },
+  {
+    "id": "base2-63",
+    "name": "Venonat",
+    "imageUrl": "https://images.pokemontcg.io/base2/63.png",
+    "subType": { "id": 13},
+    "superType": { "id": 2 },
+    "level": "12",
+    "hp": "40",
+    "retreatCost": [
+      { "id" : 1 }
+    ],
+    "convertedRetreatCost": 1,
+    "number": "63",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "types": [
+      { "id" : 7 }
+    ],
+    "attacks": [
+      {
+        "name": "Stun Spore",
+        "cost": [
+          { "id" : 7 }
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      },
+      {
+        "name": "Leech Life",
+        "cost": [
+          { "id" : 7 },
+          { "id" : 1 }
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "Remove a number of damage counters from Venonat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance)."
+      }
+    ],
+    "weaknesses": [ "id": 6 ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/63_hires.png",
+    "nationalPokedexNumber": 48,
+    "evolvesTo": [
+      "Venomoth"
+    ]
+  },
+  {
+    "id": "base2-64",
+    "name": "Poké Ball",
+    "imageUrl": "https://images.pokemontcg.io/base2/64.png",
+    "subtype": "",
+    "superType": { "id": 3 },
+    "number": "64",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "Common",
+    "series": "Base",
+    "set": { "id" : 2 },
+    "setCode": "base2",
+    "text": [
+      "Flip a coin. If heads, you may search your deck for any Basic Pokémon or Evolution card. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward."
+    ],
+    "imageUrlHiRes": "https://images.pokemontcg.io/base2/64_hires.png"
+  }
+]
