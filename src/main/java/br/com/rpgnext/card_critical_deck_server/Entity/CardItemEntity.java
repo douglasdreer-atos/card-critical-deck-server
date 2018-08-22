@@ -1,7 +1,5 @@
 package br.com.rpgnext.card_critical_deck_server.Entity;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
 import javax.persistence.*;
 
 @Entity
