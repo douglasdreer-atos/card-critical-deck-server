@@ -15,7 +15,6 @@ public class CardController {
     @Autowired
     private CardService service;
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
     @ResponseBody
@@ -23,7 +22,6 @@ public class CardController {
         return new ResponseEntity<>((List) service.listar(), HttpStatus.OK);
     }
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}")
     @ResponseBody
@@ -31,7 +29,6 @@ public class CardController {
         return new ResponseEntity<>(service.buscarPorId(id), HttpStatus.OK);
     }
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}/item")
     @ResponseBody
@@ -39,7 +36,6 @@ public class CardController {
         return new ResponseEntity<>(service.buscarPorItem(id), HttpStatus.OK);
     }
 
-    //@CrossOrigin(origns = "https:deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/sortear")
     @ResponseBody
@@ -47,7 +43,6 @@ public class CardController {
         return new ResponseEntity<>(service.sortearPersonalizado(), HttpStatus.OK);
     }
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
@@ -55,7 +50,6 @@ public class CardController {
         return new ResponseEntity<>(service.salvar(card), HttpStatus.OK);
     }
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar/todos")
     @ResponseBody
@@ -63,16 +57,14 @@ public class CardController {
         return new ResponseEntity<>(service.salvarTodos(cards), HttpStatus.OK);
     }
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @PutMapping(value = "{id}/editar")
     @ResponseBody
     public ResponseEntity<Boolean> editar(@PathVariable Long id, @RequestBody CardEntity card) {
-        CardEntity cardSalvo = service.editar(card);
+        card = service.editar(card);
         return new ResponseEntity<>(true, HttpStatus.OK);
     }
 
-    //@CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
     @CrossOrigin(origins = "http://localhost:8080")
     @DeleteMapping(value = "{id}/excluir")
     @ResponseBody

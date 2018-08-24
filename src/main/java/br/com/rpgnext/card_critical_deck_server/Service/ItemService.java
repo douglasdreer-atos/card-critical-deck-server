@@ -7,18 +7,20 @@ import br.com.rpgnext.card_critical_deck_server.Repository.TipoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 @Service
 public class ItemService {
-    @Autowired
-    private ItemRepository repository;
+    private final ItemRepository repository;
+    private final TipoRepository tipoRepository;
 
     @Autowired
-    private TipoRepository tipoRepository;
+    public ItemService(ItemRepository repository, TipoRepository tipoRepository) {
+        this.repository = repository;
+        this.tipoRepository = tipoRepository;
+    }
 
     public List<ItemEntity> listar(){
         List<ItemEntity> lista = (List) repository.findAll();
@@ -33,7 +35,7 @@ public class ItemService {
 
     public List<ItemEntity> buscarPorTipo(Long id) {
         TipoEntity tipo = tipoRepository.findById(id).get();
-        return (List) repository.findByTipo(tipo);
+        return repository.findByTipo(tipo);
     }
 
     public ItemEntity salvar(ItemEntity item){
@@ -43,7 +45,6 @@ public class ItemService {
     }
 
     public List<ItemEntity> salvarTodos(List<ItemEntity> itens) {
-
         itens.forEach(item -> {
             TipoEntity tipo = tipoRepository.findById(item.getTipo().getId()).get();
             item.setTipo(tipo);

@@ -1,35 +1,24 @@
-package br.com.rpgnext.card_critical_deck_server.Entity;
+package br.com.rpgnext.card_critical_deck_server.Model;
 
-import br.com.rpgnext.card_critical_deck_server.Model.Usuario;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
 
-import javax.persistence.*;
 import java.util.Date;
 
-@Entity
-@Table(name = "usuarios")
-public class UsuarioEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class Usuario {
     private Long id;
-
     private String nome;
     private String login;
     private String email;
     private String senha;
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", locale = "pt_BR")
     private Date dataCriacao;
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", locale = "pt_BR")
     private Date dataModificacao;
-
     private Boolean status;
 
-    public UsuarioEntity() {
+    public Usuario() {
     }
 
-    public UsuarioEntity(String nome, String login, String email, String senha, Date dataCriacao, Date dataModificacao, Boolean status) {
+    public Usuario(Long id, String nome, String login, String email, String senha, Date dataCriacao, Date dataModificacao, Boolean status) {
+        this.id = id;
         this.nome = nome;
         this.login = login;
         this.email = email;
@@ -39,25 +28,14 @@ public class UsuarioEntity {
         this.status = status;
     }
 
-    public UsuarioEntity(Usuario usuario) {
-        this.nome = usuario.getNome();
-        this.login = usuario.getLogin();
-        this.email = usuario.getEmail();
-        this.senha = usuario.getSenha();
-        this.dataCriacao = usuario.getDataCriacao();
-        this.dataModificacao = usuario.getDataModificacao();
-        this.status = usuario.getStatus();
-    }
-
-    @PrePersist
-    public void PrePersist(){
-        this.dataCriacao = new Date();
-        this.status = true;
-    }
-
-    @PreUpdate
-    public void PreUpdate(){
-        this.dataModificacao = new Date();
+    public Usuario(UsuarioEntity usuarioEntity) {
+        this.id = usuarioEntity.getId();
+        this.nome = usuarioEntity.getNome();
+        this.login = usuarioEntity.getLogin();
+        this.email = usuarioEntity.getEmail();
+        this.senha = usuarioEntity.getSenha();
+        this.dataCriacao = usuarioEntity.getDataCriacao();
+        this.status = usuarioEntity.getStatus();
     }
 
     public Long getId() {

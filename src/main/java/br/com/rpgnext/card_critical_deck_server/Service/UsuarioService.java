@@ -9,18 +9,26 @@ import java.util.List;
 
 @Service
 public class UsuarioService {
-    @Autowired
-    private UsuarioRepository repository;
+    private final UsuarioRepository repository;
 
-    public List<UsuarioEntity> listar(){
-        return (List) repository.findAll();
+    @Autowired
+    public UsuarioService(UsuarioRepository repository) {
+        this.repository = repository;
     }
 
-    public UsuarioEntity buscarPorId(Long id){
-        return repository.findById(id).get();
+    public List<UsuarioEntity> buscarTodos(){
+        return (List) repository.findAll();
     }
 
     public UsuarioEntity salvar(UsuarioEntity usuario){
         return repository.save(usuario);
     }
+
+    public List<UsuarioEntity> salvarTodos(List<UsuarioEntity> usuarios){
+       return (List) repository.saveAll(usuarios);
+    }
+
+
+
+
 }

@@ -9,8 +9,12 @@ import java.util.List;
 
 @Service
 public class TipoService {
+    private final TipoRepository repository;
+
     @Autowired
-    private TipoRepository repository;
+    public TipoService(TipoRepository repository) {
+        this.repository = repository;
+    }
 
     public List<TipoEntity> listar(){
         return (List) repository.findAll();

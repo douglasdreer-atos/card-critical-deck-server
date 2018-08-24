@@ -2,7 +2,6 @@ package br.com.rpgnext.card_critical_deck_server.Service;
 
 import br.com.rpgnext.card_critical_deck_server.Entity.CardEntity;
 import br.com.rpgnext.card_critical_deck_server.Entity.DeckEntity;
-import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
 import br.com.rpgnext.card_critical_deck_server.Repository.DeckRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,18 +25,23 @@ public class DeckService {
         return repository.findById(id).get();
     }
 
-    public DeckEntity buscarPorUsuario(UsuarioEntity usuario){
-        return repository.findByUsuario(usuario);
-    }
-
     public DeckEntity salvar(DeckEntity deck){
         return repository.save(deck);
+    }
+
+    public List<DeckEntity> salvarTodos(List<DeckEntity> decks){
+        return (List) repository.saveAll(decks);
     }
 
     public DeckEntity adicionarNovasCards(Long deckId, List<CardEntity> cards){
         DeckEntity deck = repository.findById(deckId).get();
         cards.forEach(card -> deck.getCards().add(card));
         return this.salvar(deck);
+    }
+
+    public Boolean excluir(Long id){
+        repository.deleteById(id);
+        return !repository.existsById(id);
     }
 
 }

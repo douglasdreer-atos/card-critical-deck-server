@@ -57,7 +57,7 @@ public class ItemController {
     @PutMapping(value = "{id}/editar")
     @ResponseBody
     public ResponseEntity<Boolean> editar(@PathVariable Long id, @RequestBody ItemEntity item){
-        ItemEntity itemSalvo = service.editar(item);
+        item = service.editar(item);
         return new ResponseEntity<>(true, HttpStatus.OK);
     }
 

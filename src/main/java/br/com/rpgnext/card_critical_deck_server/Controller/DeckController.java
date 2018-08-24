@@ -1,26 +1,17 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
-import br.com.rpgnext.card_critical_deck_server.Entity.CardEntity;
-import br.com.rpgnext.card_critical_deck_server.Entity.DeckEntity;
-import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
-import br.com.rpgnext.card_critical_deck_server.Service.DeckService;
-import br.com.rpgnext.card_critical_deck_server.Service.UsuarioService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("decks")
 public class DeckController {
+    /*
     @Autowired
     private DeckService service;
 
     @Autowired
     private UsuarioService usuarioService;
-
 
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
@@ -40,8 +31,30 @@ public class DeckController {
     @GetMapping(value = "/{id}/usuario")
     @ResponseBody
     public ResponseEntity<DeckEntity> buscarPorUsuario(@PathVariable Long id) {
-        UsuarioEntity usuario = usuarioService.buscarPorId(id);
-        return new ResponseEntity<>(service.buscarPorUsuario(usuario), HttpStatus.OK);
+       // Usuario usuario = usuarioService.buscarPorId(id);
+       // return new ResponseEntity<>(service.buscarPorUsuario(usuario), HttpStatus.OK);
+        return null;
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PostMapping(value = "/salvar")
+    @ResponseBody
+    public ResponseEntity<DeckEntity> salvar(@RequestBody DeckEntity deck){
+        return new ResponseEntity<>(service.salvar(deck), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PostMapping(value = "/salvar/todos")
+    @ResponseBody
+    public ResponseEntity<List<DeckEntity>> salvarTodos(@RequestBody List<DeckEntity> decks){
+        return new ResponseEntity<>(service.salvarTodos(decks), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PostMapping(value = "{id}/editar")
+    @ResponseBody
+    public ResponseEntity<DeckEntity> editar(@PathVariable Long id, @RequestBody DeckEntity deck){
+        return new ResponseEntity<>(service.salvar(deck), HttpStatus.OK);
     }
 
     @CrossOrigin(origins = "http://localhost:8080")
@@ -53,5 +66,12 @@ public class DeckController {
         return new ResponseEntity<>(service.salvar(deck), HttpStatus.OK);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
+    @DeleteMapping(value = "/{id}/excluir")
+    @ResponseBody
+    public ResponseEntity<Boolean> excluir(@PathVariable Long id) {
+        return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
+    }
 
+*/
 }

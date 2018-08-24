@@ -7587,7 +7587,7 @@
         "text": "Remove a number of damage counters from Venonat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance)."
       }
     ],
-    "weaknesses": [ "id": 6 ],
+    "weaknesses": [ {"id": 6} ],
     "imageUrlHiRes": "https://images.pokemontcg.io/base2/63_hires.png",
     "nationalPokedexNumber": 48,
     "evolvesTo": [
