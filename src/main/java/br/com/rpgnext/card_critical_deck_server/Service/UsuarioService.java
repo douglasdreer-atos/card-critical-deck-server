@@ -28,6 +28,11 @@ public class UsuarioService {
        return (List) repository.saveAll(usuarios);
     }
 
+    public Boolean excluir(Long id){
+        repository.deleteById(id);
+        return !repository.existsById(id);
+    }
+
 
 
 
