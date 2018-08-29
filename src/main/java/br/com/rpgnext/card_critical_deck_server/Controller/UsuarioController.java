@@ -26,6 +26,21 @@ public class UsuarioController {
     }
 
     @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/pagina/{id}")
+    @ResponseBody
+    public ResponseEntity<List<Usuario>> listarComPaginacao(@PathVariable Integer id){
+        id = id > 0 ? id - 1 : id;
+        return new ResponseEntity<>(converterEntityParaModel(service.buscarTodosComPaginacao(id)), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/{id}")
+    @ResponseBody
+    public ResponseEntity<Usuario> buscarPorId(@PathVariable Long id) {
+        return new ResponseEntity<>(converterEntityParaModel(service.buscarPorId(id)), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<Usuario> salvar(@RequestBody UsuarioEntity usuario) {
@@ -48,9 +63,9 @@ public class UsuarioController {
     }
 
     @CrossOrigin(origins = "http://localhost:8080")
-    @DeleteMapping(value = "/{id}/delete")
+    @DeleteMapping(value = "/{id}/excluir")
     @ResponseBody
-    public ResponseEntity<Boolean> editar(@PathVariable Long id){
+    public ResponseEntity<Boolean> excluir(@PathVariable Long id){
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
     }
 
@@ -84,5 +99,9 @@ public class UsuarioController {
 
     public String codificarSenha(String senha){
         return Password.generateSecurePassword(senha, Password.getSalt(30));
+    }
+
+    public Boolean checkSenha(String senha){
+        return true;
     }
 }
