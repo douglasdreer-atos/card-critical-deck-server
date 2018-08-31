@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -69,6 +70,23 @@ public class UsuarioController {
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
+    @PostMapping(value = "{id}/login")
+    @ResponseBody
+    public ResponseEntity<String> verificarUsuario(@PathVariable Long id, @RequestBody UsuarioEntity usuario){
+        String senhaBD = service.buscarPorId(id).getSenha();
+
+        String hash = null;
+
+        if(checkSenha(senhaBD, usuario.getSenha())){
+            StringBuilder builder = new StringBuilder();
+            builder.append(usuario.toString());
+            builder.append(new Date().toString());
+            hash = codificarSenha(builder.toString());
+        }
+        return new ResponseEntity<>(hash, HttpStatus.OK);
+    }
+
     public List<UsuarioEntity> converterModelParaEntity(List<Usuario> models){
         List<UsuarioEntity> entities = new ArrayList<>();
 
@@ -98,10 +116,12 @@ public class UsuarioController {
     }
 
     public String codificarSenha(String senha){
-        return Password.generateSecurePassword(senha, Password.getSalt(30));
+        return new Password().gerarSenha(senha);
     }
 
-    public Boolean checkSenha(String senha){
-        return true;
+    public Boolean checkSenha(String senhaInterna, String senhaExterna){
+        Password util = new Password();
+        Boolean status = util.conferirSenhas(senhaInterna, senhaExterna);
+        return status;
     }
 }

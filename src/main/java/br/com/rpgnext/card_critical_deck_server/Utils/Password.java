@@ -1,57 +1,29 @@
 package br.com.rpgnext.card_critical_deck_server.Utils;
 
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.PBEKeySpec;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.security.spec.InvalidKeySpecException;
-import java.util.Arrays;
-import java.util.Base64;
-import java.util.Random;
 
 public class Password {
-    private static final Random RANDOM = new SecureRandom();
-    private static final String ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVXZWYabcdefghijklmnopqrstuvxzwy";
-    private static final int ITERATIONS = 100000;
-    private static final int KEY_LENGTH = 512;
-
-    public static String getSalt(int length){
-        StringBuilder returnValue = new StringBuilder(length);
-
-        for(int i = 0; i < length; i++){
-            returnValue.append(ALPHABET.charAt(RANDOM.nextInt(ALPHABET.length())));
-        }
-
-        return new String(returnValue);
-    }
-
-    public static byte[] hash(char[] password, byte[] salt) {
-        PBEKeySpec spec = new PBEKeySpec(password, salt, ITERATIONS, KEY_LENGTH);
-        Arrays.fill(password, Character.MIN_VALUE);
+    public String gerarSenha(String senha){
+        MessageDigest algorithm = null;
+        StringBuilder hexString = new StringBuilder();
         try {
-            SecretKeyFactory skf = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
-            return skf.generateSecret(spec).getEncoded();
-        } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
-            throw new AssertionError("Houve um erro ao codificar a senha: " + e.getMessage(), e);
-        } finally {
-            spec.clearPassword();
+            algorithm = MessageDigest.getInstance("SHA-256");
+            byte messageDigest[] = algorithm.digest(senha.getBytes(StandardCharsets.UTF_8));
+
+            for (byte b : messageDigest) {
+                hexString.append(String.format("%02X", 0xFF & b));
+            }
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
         }
+        return hexString.toString();
     }
 
-    public static String generateSecurePassword(String password, String salt) {
-        byte[] securePassword = hash(password.toCharArray(), salt.getBytes());
-        return Base64.getEncoder().encodeToString(securePassword);
-    }
-
-    public static boolean verifyUserPassword(String providedPassword, String securedPassword, String salt){
-        boolean returnValue = false;
-
-        // Generate New secure password with the same salt
-        String newSecurePassword = generateSecurePassword(providedPassword, salt);
-
-        // Check if two passwords are equal
-        returnValue = newSecurePassword.equalsIgnoreCase(securedPassword);
-
-        return returnValue;
+    public Boolean conferirSenhas(String senhaInterna, String senhaExterna){
+        senhaExterna = gerarSenha(senhaExterna);
+        return senhaInterna.equalsIgnoreCase(senhaExterna);
     }
 }

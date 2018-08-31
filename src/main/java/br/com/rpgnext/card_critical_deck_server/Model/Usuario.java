@@ -101,4 +101,18 @@ public class Usuario {
     public void setStatus(Boolean status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", login='" + login + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                ", dataModificacao=" + dataModificacao +
+                ", status=" + status +
+                '}';
+    }
 }

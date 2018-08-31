@@ -47,8 +47,4 @@ public class UsuarioService {
         repository.deleteById(id);
         return !repository.existsById(id);
     }
-
-
-
-
 }
