@@ -22,6 +22,8 @@ public class ItemEntity implements Serializable {
     
     private String descricao;
 
+    private String formatacao;
+
     private Boolean status;
 
     @PrePersist
@@ -32,10 +34,11 @@ public class ItemEntity implements Serializable {
     public ItemEntity() {
     }
 
-    public ItemEntity(String titulo, TipoEntity tipo, String descricao, Boolean status) {
+    public ItemEntity(String titulo, TipoEntity tipo, String descricao, String formatacao, Boolean status) {
         this.titulo = titulo;
         this.tipo = tipo;
         this.descricao = descricao;
+        this.formatacao = formatacao;
         this.status = status;
     }
 
@@ -69,6 +72,14 @@ public class ItemEntity implements Serializable {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getFormatacao() {
+        return formatacao;
+    }
+
+    public void setFormatacao(String formatacao) {
+        this.formatacao = formatacao;
     }
 
     public Boolean getStatus() {
