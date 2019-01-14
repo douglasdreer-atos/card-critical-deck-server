@@ -1,5 +1,6 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
+import br.com.rpgnext.card_critical_deck_server.Entity.TokenEntity;
 import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
 import br.com.rpgnext.card_critical_deck_server.Model.Usuario;
 import br.com.rpgnext.card_critical_deck_server.Service.UsuarioService;
@@ -10,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -18,6 +18,9 @@ import java.util.List;
 public class UsuarioController {
     @Autowired
     private UsuarioService service;
+
+    @Autowired
+    private TokenController tokenController;
 
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
@@ -73,18 +76,14 @@ public class UsuarioController {
     @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "{id}/login")
     @ResponseBody
-    public ResponseEntity<String> verificarUsuario(@PathVariable Long id, @RequestBody UsuarioEntity usuario){
-        String senhaBD = service.buscarPorId(id).getSenha();
+    public ResponseEntity<TokenEntity> verificarUsuario(@PathVariable Long id, @RequestBody UsuarioEntity usuario) {
+        UsuarioEntity usuarioDB = service.buscarPorId(id);
+        TokenEntity token = new TokenEntity();
 
-        String hash = null;
-
-        if(checkSenha(senhaBD, usuario.getSenha())){
-            StringBuilder builder = new StringBuilder();
-            builder.append(usuario.toString());
-            builder.append(new Date().toString());
-            hash = codificarSenha(builder.toString());
+        if (checkSenha(usuarioDB.getSenha(), usuario.getSenha())) {
+            token = tokenController.salvar(usuarioDB).getBody();
         }
-        return new ResponseEntity<>(hash, HttpStatus.OK);
+        return new ResponseEntity<TokenEntity>(token, HttpStatus.OK);
     }
 
     public List<UsuarioEntity> converterModelParaEntity(List<Usuario> models){

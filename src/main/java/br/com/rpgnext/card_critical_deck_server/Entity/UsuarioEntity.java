@@ -39,6 +39,11 @@ public class UsuarioEntity {
         this.status = status;
     }
 
+    public UsuarioEntity(String login, String senha) {
+        this.login = login;
+        this.senha = senha;
+    }
+
     public UsuarioEntity(Usuario usuario) {
         this.nome = usuario.getNome();
         this.login = usuario.getLogin();
@@ -122,5 +127,19 @@ public class UsuarioEntity {
 
     public void setStatus(Boolean status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", login='" + login + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                ", dataModificacao=" + dataModificacao +
+                ", status=" + status +
+                '}';
     }
 }
