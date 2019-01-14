@@ -16,14 +16,14 @@ public class ItemController {
     @Autowired
     private ItemService service;
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
     @ResponseBody
     public ResponseEntity<List<ItemEntity>> listar(){
         return new ResponseEntity<>((List) service.listar(), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}")
     @ResponseBody
     public ResponseEntity<ItemEntity> buscarPorId(@PathVariable Long id){
@@ -31,7 +31,7 @@ public class ItemController {
     }
 
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}/tipo")
     @ResponseBody
     public ResponseEntity<List<ItemEntity>> buscarPorTipo(@PathVariable Long id) {
@@ -39,21 +39,21 @@ public class ItemController {
     }
 
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity item) {
         return new ResponseEntity<>(service.salvar(item), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar/todos")
     @ResponseBody
     public ResponseEntity<List<ItemEntity>> salvar(@RequestBody List<ItemEntity> itens) {
         return new ResponseEntity<>(service.salvarTodos(itens), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @PutMapping(value = "{id}/editar")
     @ResponseBody
     public ResponseEntity<Boolean> editar(@PathVariable Long id, @RequestBody ItemEntity item){
@@ -61,7 +61,7 @@ public class ItemController {
         return new ResponseEntity<>(true, HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://deck-critical-hit-client.herokuapp.com")
+    @CrossOrigin(origins = "http://localhost:8080")
     @DeleteMapping(value = "{id}/excluir")
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
