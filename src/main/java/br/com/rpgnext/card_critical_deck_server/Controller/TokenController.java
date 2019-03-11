@@ -18,28 +18,28 @@ public class TokenController {
     @Autowired
     private TokenService service;
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
     @GetMapping(value = "/ativos")
     @ResponseBody
     public ResponseEntity<List<TokenEntity>> listarAtivos() {
         return new ResponseEntity<>((List) service.listarTodosAtivos(), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
     @GetMapping(value = "/inativos")
     @ResponseBody
     public ResponseEntity<List<TokenEntity>> listarInativos() {
         return new ResponseEntity<>((List) service.listarTodosInativos(), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
     @GetMapping(value = "/{id}")
     @ResponseBody
     public ResponseEntity<TokenEntity> buscarPorId(@PathVariable Long id) {
         return new ResponseEntity<>(service.buscarPorId(id), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
     @GetMapping(value = "/validar")
     @ResponseBody
     public void validarToken() {
