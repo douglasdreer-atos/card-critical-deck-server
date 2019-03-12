@@ -13,21 +13,21 @@ public class DeckController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @GetMapping(value = "")
     @ResponseBody
     public ResponseEntity<List<DeckEntity>> listar() {
         return new ResponseEntity<>(service.listar(), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @GetMapping(value = "/{id}")
     @ResponseBody
     public ResponseEntity<DeckEntity> buscarPorId(@PathVariable Long id) {
         return new ResponseEntity<>(service.buscarPorId(id), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @GetMapping(value = "/{id}/usuario")
     @ResponseBody
     public ResponseEntity<DeckEntity> buscarPorUsuario(@PathVariable Long id) {
@@ -36,28 +36,28 @@ public class DeckController {
         return null;
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<DeckEntity> salvar(@RequestBody DeckEntity deck){
         return new ResponseEntity<>(service.salvar(deck), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @PostMapping(value = "/salvar/todos")
     @ResponseBody
     public ResponseEntity<List<DeckEntity>> salvarTodos(@RequestBody List<DeckEntity> decks){
         return new ResponseEntity<>(service.salvarTodos(decks), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @PostMapping(value = "{id}/editar")
     @ResponseBody
     public ResponseEntity<DeckEntity> editar(@PathVariable Long id, @RequestBody DeckEntity deck){
         return new ResponseEntity<>(service.salvar(deck), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @PostMapping(value = "/{id}/cards/adicionar")
     @ResponseBody
     public ResponseEntity<DeckEntity> adicionarCards(@PathVariable Long id, @RequestBody List<CardEntity> cards) {
@@ -66,7 +66,7 @@ public class DeckController {
         return new ResponseEntity<>(service.salvar(deck), HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com/")
+    @CrossOrigin(origins = "https://rpgnext-card-critical.herokuapp.com")
     @DeleteMapping(value = "/{id}/excluir")
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id) {
