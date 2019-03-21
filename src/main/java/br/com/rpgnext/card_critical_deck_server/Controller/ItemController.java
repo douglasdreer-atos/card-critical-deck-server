@@ -1,6 +1,7 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
 import br.com.rpgnext.card_critical_deck_server.Entity.ItemEntity;
+import br.com.rpgnext.card_critical_deck_server.Entity.TokenEntity;
 import br.com.rpgnext.card_critical_deck_server.Service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,6 +31,13 @@ public class ItemController {
         return new ResponseEntity<>(service.buscarPorId(id), HttpStatus.OK);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "?titulo={titulo}}")
+    @ResponseBody
+    public ResponseEntity<List<ItemEntity>> buscarPorTitulo(@PathVariable String titulo){
+        return new ResponseEntity<List<ItemEntity>>(service.buscarPorTitulo(titulo), HttpStatus.OK);
+    }
+
 
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/{id}/tipo")
@@ -42,8 +50,16 @@ public class ItemController {
     @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
-    public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity item) {
-        return new ResponseEntity<>(service.salvar(item), HttpStatus.OK);
+    public ResponseEntity<ItemEntity> salvar(@RequestBody ItemEntity item, @RequestBody TokenEntity token) {
+        TokenController controller = new TokenController();
+        TokenEntity tkn = controller.buscarPorNumero(token.getNumero()).getBody();
+
+        if(tkn.getId() != null){
+            return new ResponseEntity<>(service.salvar(item), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<> (new ItemEntity(), HttpStatus.UNAUTHORIZED);
+        }
+
     }
 
     @CrossOrigin(origins = "http://localhost:8080")

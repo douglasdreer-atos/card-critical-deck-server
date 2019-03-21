@@ -1,12 +1,14 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
 import br.com.rpgnext.card_critical_deck_server.Entity.CardEntity;
+import br.com.rpgnext.card_critical_deck_server.Entity.TokenEntity;
 import br.com.rpgnext.card_critical_deck_server.Service.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -15,10 +17,13 @@ public class CardController {
     @Autowired
     private CardService service;
 
+    @Autowired
+    private TokenController tokenCtrl;
+
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
     @ResponseBody
-    public ResponseEntity<List<CardEntity>> listar() {
+    public ResponseEntity<List<CardEntity>> listar(@RequestBody String numero) {
         return new ResponseEntity<>((List) service.listar(), HttpStatus.OK);
     }
 

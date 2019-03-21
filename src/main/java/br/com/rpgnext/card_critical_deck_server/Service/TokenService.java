@@ -60,4 +60,8 @@ public class TokenService {
             salvar(token);
         });
     }
+
+    public TokenEntity buscarPorNumero(String numero) {
+        return (this.repository).findByNumero(numero);
+    }
 }

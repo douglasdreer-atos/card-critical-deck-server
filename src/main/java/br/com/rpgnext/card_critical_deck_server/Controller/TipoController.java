@@ -34,6 +34,7 @@ public class TipoController {
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<TipoEntity> salvar(@RequestBody TipoEntity tipo){
+
         return new ResponseEntity<>(service.salvar(tipo), HttpStatus.OK);
     }
 
@@ -59,5 +60,7 @@ public class TipoController {
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
     }
+
+
 
 }

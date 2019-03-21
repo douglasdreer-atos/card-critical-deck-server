@@ -33,6 +33,11 @@ public class ItemService {
         return item;
     }
 
+    public List<ItemEntity> buscarPorTitulo(String titulo){
+        List<ItemEntity> itens = repository.findAllByTituloContains(titulo);
+        return itens;
+    }
+
     public List<ItemEntity> buscarPorTipo(Long id) {
         TipoEntity tipo = tipoRepository.findById(id).get();
         return repository.findByTipo(tipo);
@@ -60,6 +65,5 @@ public class ItemService {
         repository.deleteById(id);
         return !repository.existsById(id);
     }
-
 
 }

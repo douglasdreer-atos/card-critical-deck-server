@@ -10,4 +10,6 @@ import java.util.List;
 @Repository
 public interface ItemRepository extends CrudRepository<ItemEntity, Long> {
     List<ItemEntity> findByTipo(TipoEntity tipo);
+
+    List<ItemEntity> findAllByTituloContains(String titulo);
 }

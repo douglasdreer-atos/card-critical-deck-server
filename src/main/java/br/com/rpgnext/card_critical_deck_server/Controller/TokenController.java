@@ -19,6 +19,13 @@ public class TokenController {
     private TokenService service;
 
     @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/numero/{numero}")
+    @ResponseBody
+    public ResponseEntity<TokenEntity> buscarPorNumero(@PathVariable String numero) {
+        return new ResponseEntity<>(service.buscarPorNumero(numero), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/ativos")
     @ResponseBody
     public ResponseEntity<List<TokenEntity>> listarAtivos() {
@@ -42,7 +49,7 @@ public class TokenController {
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/validar")
     @ResponseBody
-    public void validarToken() {
+    public void validar() {
         List<TokenEntity> tokens = buscarTokensVencidos();
         if (!tokens.isEmpty()) {
             service.desativarTokens(tokens);

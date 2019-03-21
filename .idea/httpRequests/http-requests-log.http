@@ -1,0 +1,189 @@
+POST http://localhost:8082/critical-deck/api/v1/itens/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "titulo": "Teste de Item",
+  "tipo": { "id": 1 },
+  "descricao": "Isso é um teste"
+},
+{
+  "numero": "5d01b91fcdf935b208699c138d3a9610"
+}
+###
+GET http://localhost:8082/critical-deck/api/v1/tokens/numero/5d01b91fcdf935b208699c138d3a9610
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-03-19T043025.200.json
+
+###
+GET http://localhost:8082/critical-deck/api/v1/tokens/numero/5d01b91fcdf935b208699c138d3a9610
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-03-19T035753.200.json
+
+###
+GET http://localhost:8082/critical-deck/api/v1/tokens/ativos
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-03-19T035753.200.json
+
+###
+
+POST http://localhost:8082/critical-deck/api/v1/usuarios/1/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "id"    : 1,
+  "nome"  : "Douglas Dreer",
+  "login" : "ddreer",
+  "email" : "douglasdreer@email.com",
+  "senha": "123456",
+  "dataCriacao": "2019-03-19T18:52:36.320+0000",
+  "dataModificacao": null,
+  "status": true
+}
+
+<> 2019-03-19T035627.200.json
+
+###
+
+GET http://localhost:8082/critical-deck/api/v1/usuarios
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-03-19T035336.200.json
+
+###
+
+POST http://localhost:8082/critical-deck/api/v1/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+     "nome"  : "Douglas Dreer",
+     "login" : "ddreer",
+     "email" : "douglasdreer@email.com",
+     "senha" : "123456"
+}
+
+<> 2019-03-19T035241.200.json
+
+###
+
+POST http://localhost:8082/critical-deck/api/v1/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/javascript
+
+{
+     "nome"  : "Douglas Dreer",
+     "login" : "ddreer",
+     "email" : "douglasdreer@email.com",
+     "senha" : "123456"
+}
+
+<> 2019-03-19T035157.415.json
+
+###
+
+POST http://localhost:8082/critical-deck/api/v1/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{
+     "nome"  : "Douglas Dreer",
+     "login" : "ddreer",
+     "email" : "douglasdreer@email.com",
+     "senha" : "123456"
+}
+
+<> 2019-03-19T035048.415.json
+
+###
+
+POST http://localhost:8082/critical-deck/api/v1usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{
+     "nome"  : "Douglas Dreer",
+     "login" : "ddreer",
+     "email" : "douglasdreer@email.com",
+     "senha" : "123456"
+}
+
+###
+
+POST http://localhost:8082/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{
+     "nome"  : "Douglas Dreer",
+     "login" : "ddreer",
+     "email" : "douglasdreer@email.com",
+     "senha" : "123456"
+}
+
+###
+
+POST http://localhost:8082/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{     "nome"  : "Douglas Dreer",     "login" : "ddreer",     "email" : "douglasdreer@email.com",     "senha" : "123456" }
+
+###
+
+POST http://localhost:8082/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{     "nome"  : "Douglas Dreer",     "login" : "ddreer",     "email" : "douglasdreer@email.com",     "senha" : "123456" }
+
+###
+
+POST http://localhost:8082/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{     "nome"  : "Douglas Dreer",     "login" : "ddreer",     "email" : "douglasdreer@email.com",     "senha" : "123456" }
+
+###
+
+POST http://localhost:8081/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{     "nome"  : "Douglas Dreer",     "login" : "ddreer",     "email" : "douglasdreer@email.com",     "senha" : "123456" }
+
+###
+
+POST http://localhost:8080/usuarios/salvar
+Accept: */*
+Cache-Control: no-cache
+Content-Type: text/json
+
+{     "nome"  : "Douglas Dreer",     "login" : "ddreer",     "email" : "douglasdreer@email.com",     "senha" : "123456" }
+
+###
+
