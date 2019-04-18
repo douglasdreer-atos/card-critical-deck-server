@@ -16,6 +16,10 @@ public class TipoEntity implements Serializable {
     @Column(unique = true, nullable = true)
     private String nome;
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "categoria_id", unique = true)
+    private CategoriaEntity categoria;
+
     private Boolean status;
 
     public TipoEntity() {
@@ -23,6 +27,17 @@ public class TipoEntity implements Serializable {
 
     public TipoEntity(String nome) {
         this.nome = nome;
+    }
+
+    public TipoEntity(String nome, CategoriaEntity categoria) {
+        this.nome = nome;
+        this.categoria = categoria;
+    }
+
+    public TipoEntity(String nome, CategoriaEntity categoria, Boolean status) {
+        this.nome = nome;
+        this.categoria = categoria;
+        this.status = status;
     }
 
     @PrePersist
@@ -44,6 +59,14 @@ public class TipoEntity implements Serializable {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public CategoriaEntity getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(CategoriaEntity categoria) {
+        this.categoria = categoria;
     }
 
     public Boolean getStatus() {

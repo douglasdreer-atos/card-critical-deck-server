@@ -1,5 +1,6 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
+import br.com.rpgnext.card_critical_deck_server.Entity.CategoriaEntity;
 import br.com.rpgnext.card_critical_deck_server.Entity.TipoEntity;
 import br.com.rpgnext.card_critical_deck_server.Service.TipoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ import java.util.List;
 public class TipoController {
     @Autowired
     private TipoService service;
+
+    @Autowired
+    private CategoriaController catagoriaCtrl;
 
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
@@ -34,7 +38,8 @@ public class TipoController {
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<TipoEntity> salvar(@RequestBody TipoEntity tipo){
-
+        CategoriaEntity categoria = buscarCategoriaPorId(tipo.getCategoria().getId());
+        tipo.setCategoria(categoria);
         return new ResponseEntity<>(service.salvar(tipo), HttpStatus.OK);
     }
 
@@ -59,6 +64,11 @@ public class TipoController {
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
+    }
+
+
+    private CategoriaEntity buscarCategoriaPorId(Long id){
+        return catagoriaCtrl.buscarPorId(id).getBody();
     }
 
 
