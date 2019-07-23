@@ -1,5 +1,7 @@
 package br.com.rpgnext.card_critical_deck_server.Entity;
 
+import br.com.rpgnext.card_critical_deck_server.Model.Categoria;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,6 +14,7 @@ public class CategoriaEntity {
     @Column(nullable = false, unique = true)
     private String nome;
 
+    @Column(nullable = false, columnDefinition="Boolean default true")
     private Boolean status;
 
     @PrePersist
@@ -29,6 +32,12 @@ public class CategoriaEntity {
     public CategoriaEntity(String nome, Boolean status) {
         this.nome = nome;
         this.status = status;
+    }
+
+    public CategoriaEntity(Categoria categoria){
+        this.id = categoria.getId();
+        this.nome = categoria.getNome();
+        this.status = categoria.getStatus();
     }
 
     public Long getId() {

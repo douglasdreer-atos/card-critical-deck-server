@@ -18,6 +18,7 @@ public class CategoriaService {
     }
 
     public CategoriaEntity buscarPorId(Long id){
+        id = id == null ? 0 : id;
         return repository.findById(id).get();
     }
 
@@ -37,6 +38,4 @@ public class CategoriaService {
         repository.deleteById(id);
         return !repository.existsById(id);
     }
-
-
 }

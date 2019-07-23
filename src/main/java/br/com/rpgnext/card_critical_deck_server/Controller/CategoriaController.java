@@ -18,8 +18,8 @@ public class CategoriaController {
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "")
     @ResponseBody
-    public ResponseEntity<List<CategoriaEntity>> listar() {
-        return new ResponseEntity<>((List) service.listar(), HttpStatus.OK);
+    public ResponseEntity<List<CategoriaEntity>> listar() throws NullPointerException  {
+        return new ResponseEntity<>( (List) service.listar(), HttpStatus.OK);
     }
 
     @CrossOrigin(origins = "http://localhost:8080")
@@ -56,6 +56,16 @@ public class CategoriaController {
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
+    }
+
+    public Boolean isEmpty(){
+        Boolean status = false;
+        try{
+            status = listar().getBody().size() >= 1;
+        } catch (NullPointerException e){
+            status = true;
+        }
+        return status;
     }
 
 }
