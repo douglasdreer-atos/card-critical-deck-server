@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("tipos")
@@ -47,6 +48,7 @@ public class TipoController {
     @PostMapping(value = "/salvar/todos")
     @ResponseBody
     public ResponseEntity<List<TipoEntity>> salvarTodos(@RequestBody List<TipoEntity> tipos) {
+        tipos = buscarCategoriaPorTipo(tipos);
         return new ResponseEntity<>(service.salvarTodos(tipos), HttpStatus.OK);
     }
 
@@ -71,6 +73,14 @@ public class TipoController {
         return catagoriaCtrl.buscarPorId(id).getBody();
     }
 
+    private List<TipoEntity> buscarCategoriaPorTipo(List<TipoEntity> itens){
+        List<TipoEntity> lista = itens.stream().map(item -> {
+            CategoriaEntity categoria = buscarCategoriaPorId(item.getCategoria().getId());
+            item.setCategoria(categoria);
+            return item;
+        }).collect(Collectors.toList());
+        return lista;
+    }
 
 
 }
