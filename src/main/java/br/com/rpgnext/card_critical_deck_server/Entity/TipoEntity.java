@@ -1,5 +1,6 @@
 package br.com.rpgnext.card_critical_deck_server.Entity;
 
+import br.com.rpgnext.card_critical_deck_server.Model.Tipo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -17,9 +18,10 @@ public class TipoEntity implements Serializable {
     private String nome;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "categoria_id", unique = true)
+    @JoinColumn(name = "categoria_id", columnDefinition = "bigInt default 1")
     private CategoriaEntity categoria;
 
+    @Column(columnDefinition = "Boolean default 'true'")
     private Boolean status;
 
     public TipoEntity() {
@@ -40,9 +42,12 @@ public class TipoEntity implements Serializable {
         this.status = status;
     }
 
-    @PrePersist
-    public void prePersist(){
-        this.status = true;
+    public TipoEntity(Tipo tipo){
+        CategoriaEntity categoria = new CategoriaEntity(tipo.getCategoria());
+        this.id = tipo.getId();
+        this.nome = tipo.getNome();
+        this.categoria = categoria;
+        this.status = tipo.getStatus();
     }
 
     public Long getId() {
