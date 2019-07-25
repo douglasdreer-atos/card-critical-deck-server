@@ -1,0 +1,12 @@
+[
+  {"nome":  "Contusão", "categoria" :  {"id":  1}},
+  {"nome":  "Perfurante", "categoria" :  {"id":  1}},
+  {"nome":  "Cortante", "categoria" :  {"id":  1}},
+  {"nome":  "Mágico", "categoria" :  {"id":  1}},
+
+  {"nome":  "Corpo a Corpo", "categoria" :  {"id":  2}},
+  {"nome":  "Distância", "categoria" :  {"id":  2}},
+  {"nome":  "Natural", "categoria" :  {"id":  2}},
+  {"nome":  "Mágico", "categoria" :  {"id":  2}}
+]
+
