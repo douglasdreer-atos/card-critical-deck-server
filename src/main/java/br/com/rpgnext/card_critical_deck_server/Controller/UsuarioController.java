@@ -1,6 +1,5 @@
 package br.com.rpgnext.card_critical_deck_server.Controller;
 
-import br.com.rpgnext.card_critical_deck_server.Entity.TokenEntity;
 import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
 import br.com.rpgnext.card_critical_deck_server.Model.Usuario;
 import br.com.rpgnext.card_critical_deck_server.Service.UsuarioService;
@@ -45,6 +44,13 @@ public class UsuarioController {
     }
 
     @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping(value = "/login/{login}")
+    @ResponseBody
+    public ResponseEntity<Usuario> buscarPorLogin(@PathVariable String login) {
+        return new ResponseEntity<>(converterEntityParaModel(service.buscarPorLogin(login)), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(value = "/salvar")
     @ResponseBody
     public ResponseEntity<Usuario> salvar(@RequestBody UsuarioEntity usuario) {
@@ -63,6 +69,8 @@ public class UsuarioController {
     @PostMapping(value = "/{id}/editar")
     @ResponseBody
     public ResponseEntity<Usuario> editar(@PathVariable Long id, @RequestBody UsuarioEntity usuario){
+        usuario.setId(id);
+        usuario.setSenha(codificarSenha(usuario.getSenha()));
         return new ResponseEntity<>(converterEntityParaModel(service.salvar(usuario)), HttpStatus.OK);
     }
 
@@ -71,19 +79,6 @@ public class UsuarioController {
     @ResponseBody
     public ResponseEntity<Boolean> excluir(@PathVariable Long id){
         return new ResponseEntity<>(service.excluir(id), HttpStatus.OK);
-    }
-
-    @CrossOrigin(origins = "http://localhost:8080")
-    @PostMapping(value = "{id}/login")
-    @ResponseBody
-    public ResponseEntity<TokenEntity> verificarUsuario(@PathVariable Long id, @RequestBody UsuarioEntity usuario) {
-        UsuarioEntity usuarioDB = service.buscarPorId(id);
-        TokenEntity token = new TokenEntity();
-
-        if (checkSenha(usuarioDB.getSenha(), usuario.getSenha())) {
-            token = tokenController.salvar(usuarioDB).getBody();
-        }
-        return new ResponseEntity<TokenEntity>(token, HttpStatus.OK);
     }
 
     public List<UsuarioEntity> converterModelParaEntity(List<Usuario> models){
@@ -116,11 +111,5 @@ public class UsuarioController {
 
     public String codificarSenha(String senha){
         return new Password().gerarSenha(senha);
-    }
-
-    public Boolean checkSenha(String senhaInterna, String senhaExterna){
-        Password util = new Password();
-        Boolean status = util.conferirSenhas(senhaInterna, senhaExterna);
-        return status;
     }
 }

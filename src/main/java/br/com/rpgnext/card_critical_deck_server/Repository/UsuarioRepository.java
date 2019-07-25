@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UsuarioRepository extends CrudRepository<UsuarioEntity, Long>, PagingAndSortingRepository<UsuarioEntity, Long> {
 
+    UsuarioEntity findByLogin(String login);
 }

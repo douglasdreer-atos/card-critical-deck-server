@@ -28,6 +28,11 @@ public class Usuario {
         this.status = status;
     }
 
+    public Usuario(String login, String senha) {
+        this.login = login;
+        this.senha = senha;
+    }
+
     public Usuario(UsuarioEntity usuarioEntity) {
         this.id = usuarioEntity.getId();
         this.nome = usuarioEntity.getNome();

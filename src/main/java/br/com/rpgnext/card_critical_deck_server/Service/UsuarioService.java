@@ -26,6 +26,10 @@ public class UsuarioService {
         return repository.findById(id).get();
     }
 
+    public UsuarioEntity buscarPorLogin(String login) {
+        return repository.findByLogin(login);
+    }
+
     public List<UsuarioEntity> buscarTodosComPaginacao(Integer pagina){
         PageRequest pageable = PageRequest.of(pagina, itemPorPagina);
         return repository.findAll(pageable).getContent();
@@ -47,4 +51,6 @@ public class UsuarioService {
         repository.deleteById(id);
         return !repository.existsById(id);
     }
+
+
 }
