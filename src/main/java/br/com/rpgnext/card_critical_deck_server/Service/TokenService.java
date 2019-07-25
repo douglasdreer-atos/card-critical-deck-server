@@ -31,7 +31,7 @@ public class TokenService {
     }
 
     public List<TokenEntity> buscarTokenVencidos() {
-        List<TokenEntity> lista = repository.findByDataValidadeGreaterThan(new Date());
+        List<TokenEntity> lista = repository.findAllByDataValidadeIsLessThanEqualAndStatusTrue(new Date());
         return lista;
     }
 
@@ -39,7 +39,6 @@ public class TokenService {
         return (this.repository).findByUsuario(usuario);
     }
 
-    // TODO: Fazer um esquema de gravar apenas uma vez o usuário, reaproveitando o mesmo usuário.
     public TokenEntity salvar(TokenEntity token) {
         return (this.repository).save(token);
     }

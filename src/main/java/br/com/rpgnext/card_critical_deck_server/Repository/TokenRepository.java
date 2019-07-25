@@ -5,19 +5,15 @@ import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.BitSet;
 import java.util.Date;
 import java.util.List;
 
 @Repository
 public interface TokenRepository extends CrudRepository<TokenEntity, Long> {
     List<TokenEntity> findByStatusTrue();
-
     List<TokenEntity> findByStatusFalse();
-
     TokenEntity findByUsuario(UsuarioEntity usuario);
-
-    List<TokenEntity> findByDataValidadeGreaterThan(Date data);
-
     TokenEntity findByNumero(String numero);
+    List<TokenEntity> findAllByDataValidadeIsLessThanEqualAndStatusTrue(Date Data);
+    List<TokenEntity> findAllByDataValidadeIsGreaterThanEqualAndStatusTrue(Date date);
 }

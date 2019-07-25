@@ -3,13 +3,12 @@ package br.com.rpgnext.card_critical_deck_server.Controller;
 import br.com.rpgnext.card_critical_deck_server.Entity.TokenEntity;
 import br.com.rpgnext.card_critical_deck_server.Entity.UsuarioEntity;
 import br.com.rpgnext.card_critical_deck_server.Service.TokenService;
-import br.com.rpgnext.card_critical_deck_server.Utils.MD5;
+import br.com.rpgnext.card_critical_deck_server.Utils.Token;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -49,11 +48,14 @@ public class TokenController {
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = "/validar")
     @ResponseBody
-    public void validar() {
+    public ResponseEntity<String> validar() {
         List<TokenEntity> tokens = buscarTokensVencidos();
         if (!tokens.isEmpty()) {
             service.desativarTokens(tokens);
         }
+
+        String mensagem = String.format("Foram desativados %s token(s)", tokens.size());
+        return new ResponseEntity<>(mensagem, HttpStatus.OK);
     }
 
     public ResponseEntity<TokenEntity> salvar(UsuarioEntity usuario) {
@@ -67,11 +69,6 @@ public class TokenController {
     }
 
     private String gerarToken(UsuarioEntity usuario) {
-        StringBuilder builder = new StringBuilder();
-        builder.append(usuario.getLogin());
-        builder.append(new Date().toString());
-        MD5 codificador = new MD5(builder.toString());
-
-        return codificador.getValor();
+       return Token.gerar(usuario);
     }
 }
