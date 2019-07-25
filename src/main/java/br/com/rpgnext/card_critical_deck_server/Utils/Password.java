@@ -1,12 +1,11 @@
 package br.com.rpgnext.card_critical_deck_server.Utils;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Password {
-    public String gerarSenha(String senha){
+    public static String gerarSenha(String senha){
         MessageDigest algorithm = null;
         StringBuilder hexString = new StringBuilder();
         try {
@@ -22,7 +21,7 @@ public class Password {
         return hexString.toString();
     }
 
-    public Boolean conferirSenhas(String senhaInterna, String senhaExterna){
+    public static Boolean conferirSenhas(String senhaInterna, String senhaExterna){
         senhaExterna = gerarSenha(senhaExterna);
         return senhaInterna.equalsIgnoreCase(senhaExterna);
     }
