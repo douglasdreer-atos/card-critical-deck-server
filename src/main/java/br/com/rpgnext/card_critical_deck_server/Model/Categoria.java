@@ -4,11 +4,17 @@ public class Categoria {
     private Long id;
     private String nome;
     private Boolean status;
+    private String token;
 
     public Categoria(Long id, String nome, Boolean status) {
         this.id = id;
         this.nome = nome;
         this.status = status;
+    }
+
+    public Categoria(String nome, String token) {
+        this.nome = nome;
+        this.token = token;
     }
 
     public Categoria(Long id) {
@@ -32,6 +38,14 @@ public class Categoria {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public Boolean getStatus() {
